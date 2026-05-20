@@ -1,6 +1,53 @@
 <footer class="footer">
-  {% for item in site.data.settings.social %}
-    <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></a>
-  {% endfor %}
-  <div class="footer-description"><a href="{{ site.github.url }}/">{{ site.title }} | {{ site.description }} by {{ site.author }}</a></div>
+  <div class="footer-inner">
+    <div class="footer-grid">
+
+      <!-- Brand column -->
+      <div class="footer-brand">
+        <span class="footer-logo-text">Scén<span>a</span>rio</span>
+        <p>Des ateliers et jeux pour comprendre, débattre et s'approprier les grands scénarios de transition socio-énergétique. Pour le grand public, les écoles et les entreprises.</p>
+        <div class="footer-social">
+          {% for item in site.data.settings.social %}
+            <a href="{{ item.link }}" target="_blank" rel="noopener" aria-label="{{ item.icon }}">
+              <i class="fa-brands fa-{{ item.icon }}" aria-hidden="true"></i>
+            </a>
+          {% endfor %}
+          <a href="mailto:contact@scenario-asso.fr" aria-label="Email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation column -->
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          {% for item in site.data.settings.menu %}
+            <li><a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Contact column -->
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:contact@scenario-asso.fr">contact@scenario-asso.fr</a></li>
+          <li><a href="{{ site.github.url }}/calendrier">Prochain atelier →</a></li>
+          <li><a href="{{ site.github.url }}/association">À propos</a></li>
+          <li><a href="{{ site.github.url }}/blog">Blog &amp; ressources</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-description">
+        <a href="{{ site.github.url }}/">© {{ 'now' | date: "%Y" }} {{ site.title }} — Association loi 1901</a>
+      </div>
+      <div class="footer-description">
+        Basé sur les travaux de RTE, GIEC, ADEME &amp; Négawatt
+      </div>
+    </div>
+  </div>
 </footer>

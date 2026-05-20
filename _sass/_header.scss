@@ -1,46 +1,101 @@
+/* ============================================
+   HEADER — Dark Navy, Bold Identity
+   ============================================ */
+
 .site-header {
-  min-height: 56px;
-  width: $container-width;
+  min-height: $header-thickness;
+  width: 100%;
   position: fixed;
-  background-color: white;
-  box-shadow: 0 5px 6px -6px #bbb;
-  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $navy;
+  box-shadow: 0 2px 20px rgba(15, 27, 45, 0.4);
+  z-index: 1000;
+  transition: background $transition-fast, box-shadow $transition-fast;
 }
-@media (max-width: $container-width) {
-  .site-header {
-    min-height: 56px;
-    width: 95vw;
-    position: fixed;
-    background-color: white;
-    box-shadow: 0 5px 6px -6px #bbb;
-    z-index: 100;
+
+.site-header.scrolled {
+  background-color: rgba(15, 27, 45, 0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 30px rgba(15, 27, 45, 0.5);
+}
+
+.header-inner {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-thickness;
+}
+
+/* Logo */
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none !important;
+
+  img.logo-img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    border-radius: 6px;
+  }
+
+  .logo-text {
+    font-family: $base-font-family;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: $white;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+
+    span {
+      color: $brand-color;
+    }
   }
 }
-.site-header a {
-  text-decoration: none;
-}
-.site-title {
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 56px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 10px;
-  float: left;
-}
+
+/* Desktop Navigation */
 .menu-list {
-  line-height: $header-thickness;
-  float: right;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
+
 .menu-link {
-  padding: 5px 10px;
+  font-family: $base-font-family;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.8) !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: all $transition-fast;
+  letter-spacing: 0.01em;
+
+  &:hover {
+    color: $white !important;
+    background: rgba(255,255,255,0.1);
+  }
+
+  &.active {
+    color: $brand-color !important;
+    background: rgba(255, 107, 53, 0.12);
+  }
+
+  i.fa {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
 }
 
-/*
-  Responsiveness with a dropdown menu
-*/
-
-@media (min-width: $container-width) {
+/* Responsive — Hamburger menu */
+@media (min-width: $tablet-width) {
   .dropbtn {
     display: none;
   }
@@ -48,47 +103,74 @@
     display: none;
   }
 }
-@media (max-width: $container-width) {
+
+@media (max-width: $tablet-width) {
   .menu-list {
     display: none;
   }
-  .site-title {
-    padding-right: 0.25rem;
+
+  .site-logo .logo-text {
+    font-size: 1.2rem;
   }
+
   .dropbtn {
-    background-color: white;
-    color: black;
-    padding: 16px;
-    margin-top: 4px;
-    font-size: 16px;
-    border: none;
+    background: transparent;
+    color: $white;
+    padding: 10px 14px;
+    font-size: 1.2rem;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 6px;
     cursor: pointer;
+    transition: all $transition-fast;
+
+    &:hover {
+      background: rgba(255,255,255,0.1);
+    }
   }
+
   .dropdown {
     position: relative;
     display: inline-block;
   }
+
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    right: 0;
+    top: calc(100% + 8px);
+    background: $navy;
+    min-width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(15, 27, 45, 0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 8px;
+    z-index: 200;
   }
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+
+  .dropdown-content a.menu-link {
     display: block;
+    padding: 10px 16px;
+    border-radius: 6px;
+    color: rgba(255,255,255,0.85) !important;
+    font-size: 0.95rem;
+
+    &:hover {
+      background: rgba(255,255,255,0.1);
+      color: $white !important;
+    }
   }
-  .dropdown-content a:hover {
-    background-color: #f1f1f1
-  }
+
   .dropdown:hover .dropdown-content {
     display: block;
+    animation: fadeIn 0.2s ease;
   }
+
   .dropdown:hover .dropbtn {
-    background-color: #f1f1f1;
+    background: rgba(255,255,255,0.1);
   }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
 }

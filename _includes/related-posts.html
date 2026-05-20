@@ -1,29 +1,28 @@
 <div class="related">
-  <h2>{{ site.data.settings.related_posts }}</h2>
+  <h2 class="related-title">{{ site.data.settings.related_posts }}</h2>
   {% assign listed_posts_urls = page.url | split: ' ' %}
   <ul class="related-posts">
-    {% for tag in page.tags %}
-      {% for mypost in site.tags[tag] limit:2 %}
-        {% if listed_posts_urls contains mypost.url %}
-        {% else %}
+    {% for post in site.posts limit:3 %}
+      {% unless listed_posts_urls contains post.url %}
+        {% unless post.url == page.url %}
           <li>
-            <h3>
-              <a href="{{ site.github.url }}{{ mypost.url }}">
-                <div class="related-thumbnail">
-                  {% if mypost.image %}
-                    <img src="{{ site.url }}{{ site.baseurl }}/assets/img/{{ mypost.image }}">
-                  {% endif %}
-                </div>
-                <div class="related-title">
-                  {{ mypost.title }}
-                </div>
-                <!--<small>{{ mypost.date | date: "%B %-d, %Y" }}</small>-->
-              </a>
-            </h3>
+            <a href="{{ site.github.url }}{{ post.url }}">
+              <div class="related-thumbnail">
+                {% if post.image %}
+                  <img src="{{ site.github.url }}/assets/img/{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+                {% else %}
+                  <div style="width:100%;height:100%;background:linear-gradient(135deg,#0F1B2D,#1A2E4A);display:flex;align-items:center;justify-content:center;">
+                    <span style="font-size:1.8rem;">📊</span>
+                  </div>
+                {% endif %}
+              </div>
+              <div class="related-title">{{ post.title }}</div>
+              {% if post.category %}<span style="font-size:0.72rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#FF6B35;font-family:'Space Grotesk',sans-serif;">{{ post.category }}</span>{% endif %}
+            </a>
           </li>
-          {% assign listed_posts_urls = listed_posts_urls | push: mypost.url %}
-        {% endif %}
-      {% endfor %}
+          {% assign listed_posts_urls = listed_posts_urls | push: post.url %}
+        {% endunless %}
+      {% endunless %}
     {% endfor %}
   </ul>
 </div>

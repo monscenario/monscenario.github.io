@@ -1,7 +1,14 @@
 <div class="post-share">
-  <div class="post-date">{{ site.data.settings.sharing_button_prompt }}</div>
+  <p style="font-family:'Space Grotesk',sans-serif; font-size:0.82rem; font-weight:600; color:#6B7A99; margin:0 0 12px;">{{ site.data.settings.sharing_button_prompt }}</p>
   <div class="sharing-icons">
-    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.github.url }}{{ page.url }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.github.url }}{{ page.url }}&amp;title={{ page.title }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.github.url }}{{ page.url }}" target="_blank" rel="noopener" aria-label="Partager sur X/Twitter">
+      <i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X / Twitter
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.github.url }}{{ page.url }}" target="_blank" rel="noopener" aria-label="Partager sur LinkedIn">
+      <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+    </a>
+    <a href="mailto:?subject={{ page.title | url_encode }}&body={{ site.github.url }}{{ page.url }}" aria-label="Partager par email">
+      <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email
+    </a>
   </div>
 </div>

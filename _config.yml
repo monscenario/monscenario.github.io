@@ -1,7 +1,8 @@
 # Site Build Settings
 
 # jekyll-paginate configuration
-paginate:            5
+paginate:            3
+paginate_path:       "/blog/page:num"
 
 # Build settings
 markdown:            kramdown
@@ -9,10 +10,12 @@ highlighter:         rouge
 permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Millennial"
-description:	       "a minimalist Jekyll theme for running a blog or publication"
-author:              "Paul Le"
+# Scénario — Association
+title:               "Scénario"
+description:         "Ateliers et jeux pour s'approprier les futurs énergétiques"
+author:              "Association Scénario"
+email:               "contact@scenario-asso.fr"
+url:                 ""
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:

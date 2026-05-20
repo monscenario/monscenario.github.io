@@ -1,35 +1,29 @@
 # Change 'comments' to true for Disqus comments
 disqus:
   comments: false
-  disqus_shortname: 'millennial-3'
+  disqus_shortname: 'scenario-asso'
 
-# If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-ID: 'UA-112060364-2'
+# Google Analytics — mettre votre ID ici
+google-ID: ''
 
 menu:
-- {name: 'Interesting Facts',  url: 'facts'}
-- {name: 'Learning Resources', url: 'resources'}
-- {name: 'Sample Posts',       url: 'sample-posts'}
-- {name: 'Documentation',      url: 'documentation'}
-- {name: 'About',              url: 'about'}
-- {name: 'Contact',            url: 'contact'}
+- {name: 'Nos programmes',  url: 'programmes'}
+- {name: 'Qui sommes-nous ?', url: 'association'}
+- {name: 'Qui êtes-vous ?', url: 'public'}
+- {name: 'Calendrier',      url: 'calendrier'}
+- {name: 'Blog',            url: 'blog'}
 
-# Available social icons are powered by Font Awesome, so you can use any icon that they offer
+# Liens sociaux
 social:
-- {icon: 'twitter', link:    'https://twitter.com/paululele'}
-- {icon: 'facebook', link:   'https://www.facebook.com/paululele'}
-- {icon: 'instagram', link:  'https://instagram.com/paululele'}
-- {icon: 'envelope', link:   'mailto:hello@paulle.ca'}
-- {icon: 'rss-square', link: 'feed.xml'}
-# - {icon: 'rss-square', link: 'rss-feed.xml'}
+- {icon: 'linkedin',   link: 'https://linkedin.com/company/scenario-asso'}
+- {icon: 'instagram',  link: 'https://instagram.com/scenario_asso'}
+- {icon: 'envelope',   link: 'mailto:contact@scenario-asso.fr'}
 
-# Customize site text
+# Textes de l'interface
 pagination:
-  next_page: 'Newer'
-  previous_page: 'Older'
+  next_page: 'Articles plus anciens'
+  previous_page: 'Articles plus récents'
 
-sharing_button_prompt: 'Feel free to share!'
-
-related_posts: 'You may also enjoy...'
-
-post_date_prefix: 'Written on'
+sharing_button_prompt: 'Partagez cet article !'
+related_posts: 'Sur le même sujet...'
+post_date_prefix: 'Publié le'

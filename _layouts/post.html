@@ -2,28 +2,48 @@
 layout: default
 ---
 
-<div class="post-content">
-  <h1>
-    {{ page.title }}
-  </h1>
-  {% if site.hide_post_date != true %}
-    {% include post-date.html %}
-  {% endif %}
-  {% if page.image %}
-    <div class="featured-image">
-      <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
+<div class="page-content-wrapper">
+
+<!-- Post Hero -->
+<div class="page-hero" {% if page.image %}style="background-image: linear-gradient(rgba(15,27,45,0.85), rgba(15,27,45,0.92)), url('/assets/img/{{ page.image }}'); background-size:cover; background-position:center;"{% endif %}>
+  <div class="page-hero-inner">
+    {% if page.category %}<span class="page-tag">{{ page.category }}</span>{% endif %}
+    <h1>{{ page.title }}</h1>
+    <p class="page-lead">
+      {% if site.hide_post_date != true %}
+        {% include post-date.html %}
+      {% endif %}
+      {% if page.author %} — {{ page.author }}{% endif %}
+    </p>
+  </div>
+</div>
+
+<!-- Post Content -->
+<section class="content-section bg-light">
+  <div class="section-inner">
+    <div class="post-content">
+      <article>
+        {{ content }}
+      </article>
+
+      {% if site.hide_post_share != true %}
+        {% include post-share.html %}
+      {% endif %}
     </div>
-  {% endif %}
-  <article>
-    {{ content }}
-  </article>
-  {% if site.hide_post_share != true %}
-    {% include post-share.html %}
-  {% endif %}
-  {% if site.hide_related_posts != true %}
+  </div>
+</section>
+
+<!-- Related Posts -->
+{% if site.hide_related_posts != true %}
+<section class="content-section bg-white" style="padding:50px 0;">
+  <div class="section-inner">
     {% include related-posts.html %}
-  {% endif %}
-  {% if site.data.settings.disqus.comments %}
-    {% include disqus.html %}
-  {% endif %}
+  </div>
+</section>
+{% endif %}
+
+{% if site.data.settings.disqus.comments %}
+  {% include disqus.html %}
+{% endif %}
+
 </div>
