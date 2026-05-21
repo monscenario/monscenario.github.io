@@ -7,45 +7,31 @@
 		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>RTE Futurs Énergétiques 2050 : décrypter les 4 scénarios en 5 minutes</title>
+				<title>Article 1 — Titre à compléter</title>
 				
-					<dc:creator>Thomas R.</dc:creator>
+					<dc:creator>Scénario</dc:creator>
 				
 				
-					<description>&lt;p&gt;En 2022, RTE (Réseau de Transport d’Électricité) publiait un document de référence : &lt;strong&gt;Futurs Énergétiques 2050&lt;/strong&gt;. Plus de 600 pages d’analyses, de modélisations et d’hypothèses sur la façon dont la France pourrait atteindre la neutralité carbone en 2050.&lt;/p&gt;
+					<description>&lt;p&gt;&lt;em&gt;Remplacez ce texte par votre article.&lt;/em&gt;&lt;/p&gt;
 </description>
 				
-				<pubDate>Thu, 01 May 2025 10:00:00 +0200</pubDate>
-				<link>http://localhost:4000/rte-futurs-energetiques-2050</link>
-				<guid isPermaLink="true">http://localhost:4000/rte-futurs-energetiques-2050</guid>
+				<pubDate>Sun, 01 Jun 2025 10:00:00 +0200</pubDate>
+				<link>http://localhost:4000/article-1</link>
+				<guid isPermaLink="true">http://localhost:4000/article-1</guid>
 			</item>
 		
 			<item>
-				<title>Le GIEC en jeu : comment rendre le rapport AR6 accessible à tous ?</title>
+				<title>Article 2 — Titre à compléter</title>
 				
-					<dc:creator>Marie D.</dc:creator>
+					<dc:creator>Scénario</dc:creator>
 				
 				
-					<description>&lt;p&gt;Le 6e rapport d’évaluation du GIEC (AR6, publié entre 2021 et 2023) est l’état de l’art mondial sur le changement climatique. Il synthétise des milliers d’études scientifiques en trois volumes couvrant les bases physiques, les impacts et les solutions.&lt;/p&gt;
+					<description>&lt;p&gt;&lt;em&gt;Remplacez ce texte par votre article.&lt;/em&gt;&lt;/p&gt;
 </description>
 				
-				<pubDate>Tue, 15 Apr 2025 10:00:00 +0200</pubDate>
-				<link>http://localhost:4000/giec-ar6-accessible-jeu</link>
-				<guid isPermaLink="true">http://localhost:4000/giec-ar6-accessible-jeu</guid>
-			</item>
-		
-			<item>
-				<title>Retour d&apos;expérience : un atelier en lycée professionnel à Grenoble</title>
-				
-					<dc:creator>L&apos;équipe Scénario</dc:creator>
-				
-				
-					<description>&lt;p&gt;Le 14 mars dernier, nous intervenions pour la première fois dans un lycée professionnel. 28 élèves de Bac Pro Technicien en Installation des Systèmes Énergétiques et Climatiques (TISEC). Des futur·es professionnel·les qui installeront demain les pompes à chaleur, les panneaux solaires et les systèmes de gestion d’énergie.&lt;/p&gt;
-</description>
-				
-				<pubDate>Thu, 20 Mar 2025 09:00:00 +0100</pubDate>
-				<link>http://localhost:4000/retour-atelier-lycee-pro-grenoble</link>
-				<guid isPermaLink="true">http://localhost:4000/retour-atelier-lycee-pro-grenoble</guid>
+				<pubDate>Thu, 15 May 2025 10:00:00 +0200</pubDate>
+				<link>http://localhost:4000/article-2</link>
+				<guid isPermaLink="true">http://localhost:4000/article-2</guid>
 			</item>
 		
 	</channel>

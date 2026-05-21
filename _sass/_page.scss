@@ -1,320 +1,246 @@
 /* ============================================
-   STATIC PAGES — Shared styles for all pages
+   STATIC PAGES — Minimalist shared styles
    ============================================ */
 
-/* Page Hero Banner */
+/* Page top padding (below fixed header) */
+.page-content-wrapper {
+  padding-top: $header-thickness;
+}
+
+/* ---- Page Hero ---- */
 .page-hero {
-  background: $navy;
-  padding: 100px 20px 70px;
-  margin-top: 0;
-  position: relative;
-  overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -10%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(255, 107, 53, 0.08) 0%, transparent 70%);
-    pointer-events: none;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -60%;
-    left: -5%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(78, 205, 196, 0.06) 0%, transparent 70%);
-    pointer-events: none;
-  }
+  background: #fff;
+  padding: 100px 40px 80px;
+  border-bottom: 1px solid #E5E5E5;
 
   .page-hero-inner {
-    max-width: $container-width;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
+    max-width: 900px;
   }
 
   .page-tag {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255, 107, 53, 0.15);
-    border: 1px solid rgba(255, 107, 53, 0.3);
-    color: $brand-color;
+    display: inline-block;
     font-family: $base-font-family;
-    font-size: 0.72rem;
-    font-weight: 700;
+    font-size: 0.7rem;
+    font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    padding: 5px 12px;
-    border-radius: 100px;
-    margin-bottom: 1.2rem;
+    color: #777;
+    margin-bottom: 1.5rem;
   }
 
   h1 {
     font-family: $base-font-family;
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 800;
-    color: $white;
-    letter-spacing: -0.03em;
-    max-width: 700px;
-    margin-bottom: 1rem;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 300;
+    color: #111;
+    letter-spacing: -0.02em;
+    max-width: 780px;
+    margin-bottom: 1.2rem;
     line-height: 1.15;
   }
 
   .page-lead {
-    font-family: $body-font-family;
-    font-size: 1.1rem;
-    color: rgba(255,255,255,0.65);
-    max-width: 580px;
-    line-height: 1.7;
+    font-size: 1rem;
+    color: #777;
+    max-width: 560px;
+    line-height: 1.8;
     margin: 0;
   }
 }
 
-/* Page Content Area */
-.page-content {
-  max-width: $container-width;
-  margin: 0 auto;
-  padding: 70px 20px 90px;
-}
-
-/* Content Sections */
+/* ---- Generic content section ---- */
 .content-section {
-  padding: 80px 0;
+  padding: 80px 40px;
 
-  &.bg-light   { background: $light-bg; }
-  &.bg-white   { background: $white; }
-  &.bg-navy    { background: $navy; }
-  &.bg-off     { background: $off-white; }
+  &.bg-light  { background: #FAFAFA; }
+  &.bg-white  { background: #fff; }
+  &.bg-off    { background: #F3F3F3; }
+  &.bg-navy   { background: #111; } /* kept for compat */
 
   .section-inner {
-    max-width: $container-width;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
   }
 }
 
-/* Card grid for pages */
-.cards-grid {
+/* ---- Section titles ---- */
+.section-title {
+  font-family: $base-font-family;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #777;
+  margin: 0 0 12px;
+
+  span { color: #111; }
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #777;
+  line-height: 1.7;
+}
+
+.accent-line {
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: #111;
+  margin: 10px 0 20px;
+}
+
+/* ---- Image placeholder ---- */
+.img-placeholder {
+  background: #F3F3F3;
+  border: 1px dashed #DDD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+  font-size: 0.78rem;
+  font-family: $base-font-family;
+  letter-spacing: 0.05em;
+  width: 100%;
+  height: 360px;
+  border-radius: 4px;
+}
+
+/* ---- Programme cards (in pages) ---- */
+.prog-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 3rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: #E5E5E5;
+  border: 1px solid #E5E5E5;
+  margin-top: 60px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
   }
-
-  @media (min-width: $phone-width) and (max-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
-/* Feature card */
-.feature-card {
-  background: $white;
-  border: 1px solid $border-color;
-  border-radius: 14px;
-  padding: 32px 28px;
-  transition: all $transition-med;
-  position: relative;
-  overflow: hidden;
+.prog-item {
+  background: #fff;
+  padding: 48px;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: $brand-color;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform $transition-med;
-  }
+  &:hover { background: #FAFAFA; }
 
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 45px rgba(15, 27, 45, 0.1);
-    border-color: transparent;
-
-    &::before { transform: scaleX(1); }
-  }
-
-  .feature-icon {
-    font-size: 1.8rem;
-    margin-bottom: 18px;
+  .prog-number {
+    font-family: $base-font-family;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #AAA;
+    margin-bottom: 24px;
     display: block;
   }
 
   h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: $navy;
-    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #111;
+    margin: 0 0 14px;
+    letter-spacing: -0.01em;
   }
 
   p {
     font-size: 0.88rem;
-    color: $text-muted;
-    line-height: 1.65;
-    margin: 0;
+    color: #777;
+    line-height: 1.7;
+    margin: 0 0 24px;
   }
-}
 
-/* Audience cards (Qui êtes-vous?) */
-.audience-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  margin-top: 3rem;
-
-  @media (max-width: $tablet-width) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.audience-card {
-  border-radius: 16px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform $transition-med, box-shadow $transition-med;
-  position: relative;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 28px 56px rgba(15, 27, 45, 0.2);
-
-    .audience-img img { transform: scale(1.07); }
-    .audience-overlay { opacity: 1; }
-  }
-}
-
-.audience-img {
-  width: 100%;
-  height: 260px;
-  overflow: hidden;
-  position: relative;
-
-  img {
+  .prog-img {
     width: 100%;
-    height: 100%;
+    height: 220px;
     object-fit: cover;
-    transition: transform 0.5s ease;
-    border-radius: 0 !important;
-    margin: 0 !important;
+    display: block;
+    margin-bottom: 24px;
+    border-radius: 2px;
+  }
+
+  .prog-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+
+    span {
+      font-size: 0.75rem;
+      color: #777;
+      background: #F3F3F3;
+      padding: 4px 10px;
+      border-radius: 2px;
+    }
+  }
+
+  a.link-arrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #111;
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
   }
 }
 
-.audience-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(255, 107, 53, 0.15);
-  opacity: 0;
-  transition: opacity $transition-fast;
-}
-
-.audience-body {
-  background: $white;
-  padding: 28px 30px;
-  border: 1px solid $border-color;
-  border-top: none;
-  border-radius: 0 0 16px 16px;
-}
-
-.audience-tag {
-  font-family: $base-font-family;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: $teal;
-  background: rgba(78, 205, 196, 0.1);
-  padding: 3px 9px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 12px;
-}
-
-.audience-body h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: $navy;
-  margin: 0 0 10px 0;
-}
-
-.audience-body p {
-  font-size: 0.88rem;
-  color: $text-muted;
-  line-height: 1.65;
-  margin: 0 0 18px 0;
-}
-
-/* Timeline for Calendrier */
+/* ---- Calendar list ---- */
 .calendar-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 2rem;
+  margin-top: 40px;
+  border-top: 1px solid #E5E5E5;
 }
 
 .calendar-item {
   display: grid;
-  grid-template-columns: 80px 1fr auto;
-  gap: 24px;
+  grid-template-columns: 100px 1fr auto;
+  gap: 30px;
   align-items: center;
-  background: $white;
-  border: 1px solid $border-color;
-  border-radius: 12px;
-  padding: 24px 28px;
-  transition: all $transition-fast;
+  padding: 28px 0;
+  border-bottom: 1px solid #E5E5E5;
+  transition: background $transition-fast;
 
-  &:hover {
-    border-color: $brand-color;
-    box-shadow: 0 8px 24px rgba(255, 107, 53, 0.12);
-  }
+  &:hover { background: #FAFAFA; padding-left: 12px; }
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 10px;
   }
 }
 
 .cal-date {
-  text-align: center;
   font-family: $base-font-family;
 
   .cal-day {
     display: block;
     font-size: 2rem;
-    font-weight: 800;
-    color: $brand-color;
+    font-weight: 300;
+    color: #111;
     line-height: 1;
+    letter-spacing: -0.03em;
   }
 
   .cal-month {
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: $text-muted;
-    margin-top: 2px;
+    letter-spacing: 0.1em;
+    color: #AAA;
+    margin-top: 4px;
   }
 }
 
 .cal-info {
   h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: $navy;
-    margin: 0 0 6px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #111;
+    margin: 0 0 8px;
   }
 
   .cal-meta {
@@ -323,231 +249,118 @@
     flex-wrap: wrap;
 
     span {
-      font-size: 0.82rem;
-      color: $text-muted;
-      display: flex;
-      align-items: center;
-      gap: 5px;
+      font-size: 0.78rem;
+      color: #777;
     }
   }
 }
 
-/* Testimonials */
-.testimonials {
-  margin-top: 3rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-
-  @media (max-width: $tablet-width) {
-    grid-template-columns: 1fr;
-  }
-}
-
-.testimonial-card {
-  background: $white;
-  border: 1px solid $border-color;
-  border-radius: 14px;
-  padding: 28px;
-  position: relative;
-
-  &::before {
-    content: '"';
-    position: absolute;
-    top: 12px;
-    left: 22px;
-    font-family: Georgia, serif;
-    font-size: 4rem;
-    color: $brand-color;
-    opacity: 0.2;
-    line-height: 1;
-  }
-
-  blockquote {
-    border: none;
-    background: none;
-    padding: 0;
-    margin: 0;
-    color: $text-dark;
-    font-style: normal;
-    font-size: 0.95rem;
-    line-height: 1.7;
-    padding-top: 1rem;
-  }
-
-  .testimonial-author {
-    margin-top: 16px;
-    font-family: $base-font-family;
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: $text-muted;
-
-    strong {
-      color: $navy;
-      display: block;
-    }
-  }
-}
-
-/* Team grid */
+/* ---- Team ---- */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  margin-top: 3rem;
+  gap: 1px;
+  background: #E5E5E5;
+  border: 1px solid #E5E5E5;
+  margin-top: 48px;
 
-  @media (max-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: $phone-width) {
-    grid-template-columns: 1fr;
-  }
+  @media (max-width: $tablet-width) { grid-template-columns: 1fr; }
 }
 
 .team-card {
-  text-align: center;
-  background: $white;
-  border: 1px solid $border-color;
-  border-radius: 14px;
-  padding: 32px 24px 28px;
-  transition: all $transition-med;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 35px rgba(15, 27, 45, 0.1);
-  }
+  background: #fff;
+  padding: 40px 36px;
 
   .team-avatar {
-    width: 80px;
-    height: 80px;
+    width: 64px;
+    height: 64px;
     border-radius: 50%;
-    background: $off-white;
-    border: 3px solid $border-color;
-    margin: 0 auto 16px;
+    background: #F3F3F3;
+    border: 1px solid #E5E5E5;
+    margin: 0 0 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     overflow: hidden;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      margin: 0 !important;
-      border-radius: 50% !important;
-    }
   }
 
   h3 {
     font-size: 1rem;
-    font-weight: 700;
-    color: $navy;
-    margin: 0 0 4px 0;
+    font-weight: 400;
+    color: #111;
+    margin: 0 0 4px;
   }
 
   .team-role {
-    font-size: 0.8rem;
-    color: $brand-color;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #AAA;
     font-weight: 600;
-    font-family: $base-font-family;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 
   p {
-    font-size: 0.83rem;
-    color: $text-muted;
-    line-height: 1.6;
+    font-size: 0.82rem;
+    color: #777;
+    line-height: 1.7;
     margin: 0;
   }
 }
 
-/* CTA Block */
-.cta-block {
-  background: $brand-color;
-  border-radius: 16px;
-  padding: 60px;
+/* ---- Contact CTA ---- */
+.cta-minimal {
+  border-top: 1px solid #E5E5E5;
+  padding: 60px 0;
   text-align: center;
-  margin: 60px 0 0;
-
-  @media (max-width: $tablet-width) {
-    padding: 40px 28px;
-  }
 
   h2 {
     font-size: 1.8rem;
-    font-weight: 800;
-    color: $white;
-    margin: 0 0 12px 0;
+    font-weight: 300;
+    color: #111;
+    margin: 0 0 12px;
   }
 
   p {
-    color: rgba(255,255,255,0.8);
-    font-size: 1rem;
+    font-size: 0.9rem;
+    color: #777;
     margin: 0 auto 28px;
-    max-width: 500px;
-  }
-
-  .btn-white {
-    display: inline-block;
-    background: $white;
-    color: $brand-color !important;
-    font-family: $base-font-family;
-    font-weight: 700;
-    font-size: 0.95rem;
-    padding: 14px 32px;
-    border-radius: 6px;
-    text-decoration: none;
-    transition: all $transition-fast;
-
-    &:hover {
-      background: $navy;
-      color: $white !important;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 20px rgba(15, 27, 45, 0.25);
-    }
+    max-width: 460px;
+    line-height: 1.7;
   }
 }
 
-/* Values list */
-.values-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 2.5rem;
+/* ---- Link / button styles (minimalist) ---- */
+a.link-cta {
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #111;
+  padding-bottom: 2px;
+  transition: opacity $transition-fast;
 
-  @media (max-width: $tablet-width) {
-    grid-template-columns: 1fr;
-  }
+  &:hover { opacity: 0.5; }
 }
 
-.value-item {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 12px;
-  padding: 24px;
+a.link-cta-outline {
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #777;
+  text-decoration: none;
+  border-bottom: 1px solid #E5E5E5;
+  padding-bottom: 2px;
+  transition: all $transition-fast;
 
-  .value-icon {
-    font-size: 1.6rem;
-    flex-shrink: 0;
-  }
-
-  h4 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: $white;
-    margin: 0 0 6px 0;
-  }
-
-  p {
-    font-size: 0.85rem;
-    color: rgba(255,255,255,0.6);
-    margin: 0;
-    line-height: 1.6;
-  }
+  &:hover { color: #111; border-color: #111; }
 }

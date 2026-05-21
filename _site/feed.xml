@@ -1,137 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-05-21T15:41:52+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Scénario</title><subtitle>Ateliers et jeux pour s&apos;approprier les futurs énergétiques</subtitle><author><name>Association Scénario</name></author><entry><title type="html">RTE Futurs Énergétiques 2050 : décrypter les 4 scénarios en 5 minutes</title><link href="http://localhost:4000/rte-futurs-energetiques-2050" rel="alternate" type="text/html" title="RTE Futurs Énergétiques 2050 : décrypter les 4 scénarios en 5 minutes" /><published>2025-05-01T10:00:00+02:00</published><updated>2025-05-01T10:00:00+02:00</updated><id>http://localhost:4000/rte-futurs-energetiques-2050</id><content type="html" xml:base="http://localhost:4000/rte-futurs-energetiques-2050"><![CDATA[<p>En 2022, RTE (Réseau de Transport d’Électricité) publiait un document de référence : <strong>Futurs Énergétiques 2050</strong>. Plus de 600 pages d’analyses, de modélisations et d’hypothèses sur la façon dont la France pourrait atteindre la neutralité carbone en 2050.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-05-21T16:52:43+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Scénario</title><subtitle>Ateliers et jeux pour s&apos;approprier les futurs énergétiques</subtitle><author><name>Association Scénario</name></author><entry><title type="html">Article 1 — Titre à compléter</title><link href="http://localhost:4000/article-1" rel="alternate" type="text/html" title="Article 1 — Titre à compléter" /><published>2025-06-01T10:00:00+02:00</published><updated>2025-06-01T10:00:00+02:00</updated><id>http://localhost:4000/article-1</id><content type="html" xml:base="http://localhost:4000/article-1"><![CDATA[<p><em>Remplacez ce texte par votre article.</em></p>
 
-<p>Résultat ? Un rapport essentiel, mais quasi-illisible pour la plupart des citoyens. Voici notre décryptage.</p>
+<h2 id="votre-titre-de-section">Votre titre de section</h2>
 
-<h2 id="les-4-scénarios-en-un-coup-dœil">Les 4 scénarios en un coup d’œil</h2>
+<p>Votre contenu ici. Vous pouvez utiliser le Markdown standard :</p>
 
-<p>RTE a construit 4 scénarios qui ne sont <strong>pas des prédictions</strong>, mais des <strong>trajectoires possibles</strong> selon les choix que nous ferons collectivement.</p>
-
-<h3 id="m0--le-tout-renouvelable">M0 — Le tout renouvelable</h3>
 <ul>
-  <li>100% d’électricité renouvelable en 2050</li>
-  <li>Forte accélération du solaire et de l’éolien</li>
-  <li>Nécessite une gestion fine de l’intermittence</li>
-  <li>Pas de prolongation ni de nouveau nucléaire</li>
+  <li><strong>Gras</strong> pour les mots-clés importants</li>
+  <li><em>Italique</em> pour les termes à souligner</li>
+  <li>Des listes à puces comme celle-ci</li>
 </ul>
 
-<h3 id="m1--renouvelables--nucléaire-historique-prolongé">M1 — Renouvelables + nucléaire historique prolongé</h3>
-<ul>
-  <li>Mix renouvelables + prolongation des réacteurs existants au-delà de 50 ans</li>
-  <li>Scénario “économie” qui limite les investissements en nouveau nucléaire</li>
-  <li>Forte incertitude sur la durabilité technique</li>
-</ul>
+<h2 id="une-autre-section">Une autre section</h2>
 
-<h3 id="m23--mix-équilibré-avec-nouveau-nucléaire">M23 — Mix équilibré avec nouveau nucléaire</h3>
-<ul>
-  <li>Construction de 6 à 14 nouveaux réacteurs EPR2</li>
-  <li>Renouvelables en forte croissance simultanément</li>
-  <li>Le scénario le plus proche des annonces gouvernementales actuelles</li>
-</ul>
-
-<h3 id="n03--nucléaire-étendu">N03 — Nucléaire étendu</h3>
-<ul>
-  <li>Priorité absolue au nouveau nucléaire (14 réacteurs +)</li>
-  <li>Plus faible croissance des renouvelables</li>
-  <li>Pari sur la maîtrise industrielle française</li>
-</ul>
-
-<h2 id="ce-que-tous-les-scénarios-ont-en-commun">Ce que tous les scénarios ont en commun</h2>
-
-<p>C’est là le point souvent oublié dans les débats : <strong>quelle que soit la trajectoire choisie</strong>, RTE souligne que :</p>
-
-<blockquote>
-  <p>“Il n’existe aucun scénario permettant d’atteindre la neutralité carbone en 2050 sans une <strong>réduction significative de la consommation d’énergie</strong>.”</p>
-</blockquote>
-
-<p>Sobriété, efficacité énergétique et électrification des usages (véhicules, chauffage) sont des piliers <strong>transversaux</strong> à tous les scénarios.</p>
-
-<h2 id="pourquoi-cest-difficile-à-comprendre-">Pourquoi c’est difficile à comprendre ?</h2>
-
-<p>Parce que les scénarios ne répondent pas à la question “que doit-on faire ?”, mais à “que se passerait-il si l’on faisait X ?”. Cette distinction entre <em>normatif</em> et <em>exploratoire</em> est fondamentale — et c’est exactement ce que nos ateliers aident à saisir.</p>
+<p>Votre texte continue ici.</p>
 
 <hr />
 
-<p><em>Cet article est une synthèse pédagogique. Pour les données complètes, consultez le <a href="https://www.rte-france.com/analyses-tendances-et-prospectives/bilan-previsionnel-2050-futurs-energetiques">rapport RTE Futurs Énergétiques 2050</a>.</em></p>]]></content><author><name>Thomas R.</name></author><category term="Éclairage scientifique" /><summary type="html"><![CDATA[Que dit vraiment le rapport Futurs Énergétiques 2050 de RTE ? On décrypte les 4 grands scénarios de transition et ce qui les distingue.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/blog-rte.png" /><media:content medium="image" url="http://localhost:4000/blog-rte.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Le GIEC en jeu : comment rendre le rapport AR6 accessible à tous ?</title><link href="http://localhost:4000/giec-ar6-accessible-jeu" rel="alternate" type="text/html" title="Le GIEC en jeu : comment rendre le rapport AR6 accessible à tous ?" /><published>2025-04-15T10:00:00+02:00</published><updated>2025-04-15T10:00:00+02:00</updated><id>http://localhost:4000/giec-ar6-accessible-jeu</id><content type="html" xml:base="http://localhost:4000/giec-ar6-accessible-jeu"><![CDATA[<p>Le 6e rapport d’évaluation du GIEC (AR6, publié entre 2021 et 2023) est l’état de l’art mondial sur le changement climatique. Il synthétise des milliers d’études scientifiques en trois volumes couvrant les bases physiques, les impacts et les solutions.</p>
+<p><em>Source : à compléter.</em></p>]]></content><author><name>Scénario</name></author><category term="À compléter" /><summary type="html"><![CDATA[Description à compléter.]]></summary></entry><entry><title type="html">Article 2 — Titre à compléter</title><link href="http://localhost:4000/article-2" rel="alternate" type="text/html" title="Article 2 — Titre à compléter" /><published>2025-05-15T10:00:00+02:00</published><updated>2025-05-15T10:00:00+02:00</updated><id>http://localhost:4000/article-2</id><content type="html" xml:base="http://localhost:4000/article-2"><![CDATA[<p><em>Remplacez ce texte par votre article.</em></p>
 
-<p>C’est aussi, pour la plupart des gens, <strong>totalement inaccessible</strong>.</p>
+<h2 id="votre-titre-de-section">Votre titre de section</h2>
 
-<h2 id="le-problème-de-la-distance-cognitive">Le problème de la distance cognitive</h2>
+<p>Votre contenu ici.</p>
 
-<p>Quand on lit que “le réchauffement global atteindra probablement 1,5°C entre 2030 et 2052 dans le scénario SSP1-1.9”, plusieurs choses se produisent :</p>
+<h2 id="une-autre-section">Une autre section</h2>
 
-<ol>
-  <li>
-    <p><strong>L’abstraction</strong> : les degrés, c’est abstrait. Ce qui l’est moins, c’est que sa cave inonde chaque automne, ou que les étés sont devenus inhabituels.</p>
-  </li>
-  <li>
-    <p><strong>L’impuissance</strong> : à l’échelle individuelle, les chiffres globaux écrasent. Ils paralysent plutôt qu’ils n’activent.</p>
-  </li>
-  <li>
-    <p><strong>La distance temporelle</strong> : 2050, pour beaucoup de gens, c’est loin. Même si ce n’est plus le cas objectivement.</p>
-  </li>
-</ol>
-
-<h2 id="ce-que-le-jeu-change">Ce que le jeu change</h2>
-
-<p>Notre atelier “Le GIEC en classe” contourne ces trois obstacles avec une approche simple :</p>
-
-<h3 id="1-ancrer-dans-le-local">1. Ancrer dans le local</h3>
-<p>Plutôt que des moyennes globales, on travaille avec des données régionales. L’évolution de la pluviométrie en Provence, la fréquence des canicules en Île-de-France, le risque côtier en Bretagne.</p>
-
-<h3 id="2-mettre-en-situation-de-décision">2. Mettre en situation de décision</h3>
-<p>Les participants ne subissent pas les scénarios — ils les habitent. En incarnant un maire de commune littorale, un agriculteur céréalier ou un directeur d’école en 2040, on passe de la statistique à la question réelle : <em>qu’est-ce que je fais, moi, avec ça ?</em></p>
-
-<h3 id="3-travailler-sur-les-incertitudes">3. Travailler sur les incertitudes</h3>
-<p>Le GIEC communique des fourchettes, pas des certitudes. Apprendre à raisonner avec des probabilités et des incertitudes — sans tomber dans le “on ne sait pas donc on ne fait rien” — est une compétence citoyenne fondamentale.</p>
-
-<h2 id="ce-que-nous-avons-appris-de-nos-ateliers">Ce que nous avons appris de nos ateliers</h2>
-
-<p>Après 20 sessions dans des lycées, quelques enseignements :</p>
-
-<ul>
-  <li><strong>Le déni s’évapore souvent dans les 30 premières minutes</strong>. Pas par sermon, mais parce que la situation de jeu force à prendre position.</li>
-  <li><strong>Les questions “difficiles” émergent naturellement</strong> : nucléaire, viande, aviation, inégalités Nord-Sud. L’animateur n’a pas à les imposer.</li>
-  <li><strong>Les élèves les plus “climatosceptiques” finissent souvent par les discussions les plus riches</strong>. Le jeu crée une sécurité psychologique que le cours magistral n’offre pas.</li>
-</ul>
+<p>Votre texte continue ici.</p>
 
 <hr />
 
-<p><em>Référence : GIEC (2023), Synthesis Report of the IPCC Sixth Assessment Report (AR6). <a href="https://www.ipcc.ch/report/ar6/syr/">Disponible ici.</a></em></p>]]></content><author><name>Marie D.</name></author><category term="Pédagogie" /><summary type="html"><![CDATA[Le 6e rapport d'évaluation du GIEC est fondamental mais intimidant. Retour sur notre approche pédagogique pour le rendre vivant.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/blog-giec.png" /><media:content medium="image" url="http://localhost:4000/blog-giec.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Retour d’expérience : un atelier en lycée professionnel à Grenoble</title><link href="http://localhost:4000/retour-atelier-lycee-pro-grenoble" rel="alternate" type="text/html" title="Retour d’expérience : un atelier en lycée professionnel à Grenoble" /><published>2025-03-20T09:00:00+01:00</published><updated>2025-03-20T09:00:00+01:00</updated><id>http://localhost:4000/retour-atelier-lycee-pro-grenoble</id><content type="html" xml:base="http://localhost:4000/retour-atelier-lycee-pro-grenoble"><![CDATA[<p>Le 14 mars dernier, nous intervenions pour la première fois dans un lycée professionnel. 28 élèves de Bac Pro Technicien en Installation des Systèmes Énergétiques et Climatiques (TISEC). Des futur·es professionnel·les qui installeront demain les pompes à chaleur, les panneaux solaires et les systèmes de gestion d’énergie.</p>
-
-<p>Autant dire que la question de la transition énergétique, pour eux, c’est leur quotidien futur.</p>
-
-<h2 id="le-contexte">Le contexte</h2>
-
-<p>L’enseignante de SES, Mme Bertrand, nous avait contactés en novembre. Son souhait : <strong>relier les apprentissages techniques à une vision plus large des enjeux de la transition</strong>. “Mes élèves savent poser une pompe à chaleur. Mais ils n’ont pas toujours conscience que ce geste s’inscrit dans un changement de système beaucoup plus grand.”</p>
-
-<p>Défi accepté.</p>
-
-<h2 id="ladaptation-du-format">L’adaptation du format</h2>
-
-<p>Habituellement, notre atelier grand public mise sur l’incarnation de rôles très divers (élu, habitant, industriel…). Ici, nous avons décidé de <strong>spécialiser les rôles</strong> : les participants incarnaient des artisans et PME du bâtiment dans différentes régions de France, faisant face à différents scénarios de rénovation thermique.</p>
-
-<p>Objectif : leur montrer que leurs futures décisions professionnelles (quelle technologie recommander, comment se former, comment orienter les clients) sont liées aux grands scénarios de transition.</p>
-
-<h2 id="ce-qui-sest-passé">Ce qui s’est passé</h2>
-
-<p><strong>Premier étonnement</strong> : l’engagement immédiat. Ces élèves, souvent peu enthousiastes à l’idée d’un intervenant extérieur, ont pris le jeu très au sérieux dès les premières minutes. Peut-être parce que les situations mises en jeu touchaient directement à leur future activité.</p>
-
-<p><strong>La grande question</strong> : au bout de 45 minutes, un élève a posé la question qu’on n’attend pas : <em>“Mais si tout le monde pose des pompes à chaleur, le réseau électrique il tient ?”</em>.</p>
-
-<p>Bingo. C’est exactement la question que pose le scénario M23 de RTE. On a passé 20 minutes sur ce sujet, avec les courbes de charge, la flexibilité, le stockage. 20 minutes de physique de réseau avec des lycéens pros qui n’ont jamais entendu parler de RTE. Et ils suivaient.</p>
-
-<p><strong>La restitution</strong> : les groupes ont présenté leurs “plans de transition” pour leur région fictive. Certains avaient opté pour la rénovation massive, d’autres pour la production locale. Le débat sur les priorités (isolation ou EnR ?) a été vif, argumenté, et finalement très proche des vrais débats de politique énergétique.</p>
-
-<h2 id="ce-quon-retient">Ce qu’on retient</h2>
-
-<ul>
-  <li><strong>Le contexte professionnel amplifie l’engagement</strong> : parler à des futurs acteurs de la transition, pas à des observateurs, change tout.</li>
-  <li><strong>Les lycées pros sont un terrain inexploré</strong> pour la culture scientifique. Et pourtant, ce sont ces élèves qui construiront concrètement la transition.</li>
-  <li><strong>Notre format peut encore s’adapter</strong> : on réfléchit à une version “Bâtiment &amp; Rénovation” plus spécialisée.</li>
-</ul>
-
-<p>Un grand merci à Mme Bertrand et à ses élèves pour cette matinée exceptionnelle. 🙏</p>
-
-<hr />
-
-<p><em>Vous êtes enseignant·e en lycée professionnel et vous souhaitez accueillir un atelier Scénario ? <a href="mailto:contact@scenario-asso.fr?subject=Intervention lycée professionnel">Contactez-nous →</a></em></p>]]></content><author><name>L&apos;équipe Scénario</name></author><category term="Retour d&apos;expérience" /><summary type="html"><![CDATA[Compte-rendu de notre atelier au Lycée Professionnel des Métiers du Bâtiment. Ce que nous avons appris de ces 2h avec 28 élèves de Bac Pro.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/blog-rte.png" /><media:content medium="image" url="http://localhost:4000/blog-rte.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+<p><em>Source : à compléter.</em></p>]]></content><author><name>Scénario</name></author><category term="À compléter" /><summary type="html"><![CDATA[Description à compléter.]]></summary></entry></feed>

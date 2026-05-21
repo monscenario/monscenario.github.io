@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/retour-atelier-lycee-pro-grenoble</loc>
-<lastmod>2025-03-20T09:00:00+01:00</lastmod>
+<loc>http://localhost:4000/article-2</loc>
+<lastmod>2025-05-15T10:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/giec-ar6-accessible-jeu</loc>
-<lastmod>2025-04-15T10:00:00+02:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/rte-futurs-energetiques-2050</loc>
-<lastmod>2025-05-01T10:00:00+02:00</lastmod>
+<loc>http://localhost:4000/article-1</loc>
+<lastmod>2025-06-01T10:00:00+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/association</loc>
