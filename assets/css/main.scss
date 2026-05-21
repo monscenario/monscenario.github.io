@@ -6,20 +6,20 @@
    ============================================ */
 
 /* Typographie */
-$base-font-family:  'Space Grotesk', sans-serif;
+$base-font-family:  'Inter', sans-serif;
 $body-font-family:  'Inter', sans-serif;
 $code-font-family:  "Source Code Pro", monospace;
 
-/* Palette de couleurs */
-$brand-color:       #FF6B35;   /* Orange vibrant */
-$navy:              #0F1B2D;   /* Bleu marine profond */
-$navy-light:        #1A2E4A;   /* Marine secondaire */
-$teal:              #4ECDC4;   /* Vert-bleu accent */
-$light-bg:          #F7F9FC;   /* Fond clair */
-$off-white:         #EEF1F7;   /* Fond secondaire */
-$text-dark:         #0F1B2D;   /* Texte principal */
-$text-muted:        #6B7A99;   /* Texte secondaire */
-$border-color:      #D1D9E6;   /* Bordures */
+/* Palette de couleurs - Minimaliste */
+$brand-color:       #000000;   /* Accent noir */
+$navy:              #111111;   /* Noir très sombre pour texte */
+$navy-light:        #333333;   /* Gris foncé */
+$teal:              #AAAAAA;   /* Gris clair accent */
+$light-bg:          #FAFAFA;   /* Fond très clair */
+$off-white:         #F3F3F3;   /* Fond secondaire */
+$text-dark:         #111111;   /* Texte principal */
+$text-muted:        #777777;   /* Texte secondaire */
+$border-color:      #E5E5E5;   /* Bordures discrètes */
 $white:             #FFFFFF;
 
 /* Mise en page */

@@ -1,5 +1,5 @@
 /* ============================================
-   HEADER — Dark Navy, Bold Identity
+   HEADER — Minimalist White
    ============================================ */
 
 .site-header {
@@ -9,23 +9,22 @@
   top: 0;
   left: 0;
   right: 0;
-  background-color: $navy;
-  box-shadow: 0 2px 20px rgba(15, 27, 45, 0.4);
+  background-color: transparent;
   z-index: 1000;
   transition: background $transition-fast, box-shadow $transition-fast;
 }
 
 .site-header.scrolled {
-  background-color: rgba(15, 27, 45, 0.97);
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  box-shadow: 0 2px 30px rgba(15, 27, 45, 0.5);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
 }
 
 .header-inner {
-  max-width: $container-width;
+  max-width: 1600px; /* Wider for this design */
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,27 +35,16 @@
 .site-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none !important;
-
-  img.logo-img {
-    width: 36px;
-    height: 36px;
-    object-fit: contain;
-    border-radius: 6px;
-  }
+  flex: 1; /* Space distribution */
 
   .logo-text {
     font-family: $base-font-family;
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: $white;
-    letter-spacing: -0.02em;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #000;
+    letter-spacing: 0.1em;
     text-decoration: none;
-
-    span {
-      color: $brand-color;
-    }
   }
 }
 
@@ -64,33 +52,54 @@
 .menu-list {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 30px;
+  flex: 2; /* Center alignment */
+  justify-content: center;
 }
 
 .menu-link {
   font-family: $base-font-family;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: rgba(255,255,255,0.8) !important;
-  padding: 8px 14px;
-  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #000 !important;
   text-decoration: none !important;
   transition: all $transition-fast;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
 
   &:hover {
-    color: $white !important;
-    background: rgba(255,255,255,0.1);
+    opacity: 1;
   }
 
   &.active {
-    color: $brand-color !important;
-    background: rgba(255, 107, 53, 0.12);
+    opacity: 1;
+    font-weight: 600;
   }
+}
 
-  i.fa {
-    font-size: 1rem;
-    opacity: 0.8;
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-link-secondary {
+  font-family: $base-font-family;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #000 !important;
+  text-decoration: none !important;
+  transition: all $transition-fast;
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+
+  &::before {
+    content: "↳ ";
+    opacity: 0.5;
+  }
+  
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -105,27 +114,25 @@
 }
 
 @media (max-width: $tablet-width) {
-  .menu-list {
+  .menu-list, .header-right {
     display: none;
   }
 
   .site-logo .logo-text {
     font-size: 1.2rem;
   }
+  
+  .header-inner {
+    padding: 0 20px;
+  }
 
   .dropbtn {
     background: transparent;
-    color: $white;
-    padding: 10px 14px;
+    color: #000;
+    padding: 10px 0 10px 14px;
     font-size: 1.2rem;
-    border: 1px solid rgba(255,255,255,0.25);
-    border-radius: 6px;
+    border: none;
     cursor: pointer;
-    transition: all $transition-fast;
-
-    &:hover {
-      background: rgba(255,255,255,0.1);
-    }
   }
 
   .dropdown {
@@ -138,35 +145,36 @@
     position: absolute;
     right: 0;
     top: calc(100% + 8px);
-    background: $navy;
+    background: #fff;
     min-width: 220px;
-    border-radius: 10px;
-    box-shadow: 0 10px 40px rgba(15, 27, 45, 0.5);
-    border: 1px solid rgba(255,255,255,0.1);
-    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 10px 40px rgba(0,0,0, 0.1);
+    border: 1px solid rgba(0,0,0,0.05);
+    padding: 15px;
     z-index: 200;
   }
 
   .dropdown-content a.menu-link {
     display: block;
-    padding: 10px 16px;
-    border-radius: 6px;
-    color: rgba(255,255,255,0.85) !important;
-    font-size: 0.95rem;
+    padding: 10px 0;
+    color: #000 !important;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #f0f0f0;
+
+    &:last-child {
+      border-bottom: none;
+    }
 
     &:hover {
-      background: rgba(255,255,255,0.1);
-      color: $white !important;
+      background: transparent;
+      opacity: 1;
+      padding-left: 5px;
     }
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
     animation: fadeIn 0.2s ease;
-  }
-
-  .dropdown:hover .dropbtn {
-    background: rgba(255,255,255,0.1);
   }
 }
 

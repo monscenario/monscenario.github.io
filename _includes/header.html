@@ -2,32 +2,31 @@
   <div class="header-inner">
     <!-- Logo -->
     <a href="{{ site.github.url }}/" class="site-logo" aria-label="Scénario — Accueil">
-      <img src="{{ site.github.url }}/assets/img/logo.png" alt="Logo Scénario" class="logo-img">
-      <span class="logo-text">Scén<span>a</span>rio</span>
+      <span class="logo-text">SCÉNARIO</span>
     </a>
 
     <!-- Desktop Navigation -->
     <nav class="menu-list" aria-label="Navigation principale">
       {% for item in site.data.settings.menu %}
-        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link {% if page.url contains item.url %}active{% endif %}">{{ item.name }}</a>
+        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link {% if page.url contains item.url %}active{% endif %}">{{ item.name | upcase }}</a>
       {% endfor %}
     </nav>
+
+    <!-- Right Side (Contact, etc) -->
+    <div class="header-right">
+      <a href="{{ site.github.url }}/contact" class="menu-link-secondary">CONTACT</a>
+    </div>
 
     <!-- Mobile dropdown -->
     <div class="dropdown" aria-label="Menu mobile">
       <button class="dropbtn" aria-label="Ouvrir le menu">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-bars" aria-hidden="true" style="color: #000;"></i>
       </button>
       <div class="dropdown-content">
         {% for item in site.data.settings.menu %}
-          <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name }}</a>
+          <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name | upcase }}</a>
         {% endfor %}
-        <div style="height:1px; background:rgba(255,255,255,0.1); margin:8px 0;"></div>
-        {% for item in site.data.settings.social %}
-          <a href="{{ item.link }}" class="menu-link" target="_blank" rel="noopener">
-            <i class="fa-brands fa-{{ item.icon }}" aria-hidden="true"></i>
-          </a>
-        {% endfor %}
+        <a href="{{ site.github.url }}/contact" class="menu-link">CONTACT</a>
       </div>
     </div>
   </div>
