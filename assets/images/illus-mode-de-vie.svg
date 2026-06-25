@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
+  <!-- Background warm cream -->
+  <rect width="480" height="340" fill="#F5EFE6" rx="8"/>
+
+  <!-- Organic hills -->
+  <path d="M0 260 Q80 190 160 220 Q240 250 320 200 Q380 165 480 210 L480 340 L0 340 Z" fill="#4A8B7D" opacity="0.25"/>
+  <path d="M0 290 Q100 240 200 265 Q300 290 400 255 Q440 242 480 260 L480 340 L0 340 Z" fill="#4A8B7D" opacity="0.45"/>
+  <path d="M0 315 Q120 295 240 310 Q360 325 480 305 L480 340 L0 340 Z" fill="#4A8B7D" opacity="0.7"/>
+
+  <!-- Sun rays -->
+  <circle cx="80" cy="90" r="30" fill="#E8963C" opacity="0.9"/>
+  <line x1="80" y1="45" x2="80" y2="30" stroke="#E8963C" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <line x1="110" y1="60" x2="122" y2="48" stroke="#E8963C" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <line x1="125" y1="90" x2="142" y2="90" stroke="#E8963C" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <line x1="110" y1="120" x2="122" y2="132" stroke="#E8963C" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <line x1="50" y1="60" x2="38" y2="48" stroke="#E8963C" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <line x1="35" y1="90" x2="18" y2="90" stroke="#E8963C" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- House -->
+  <polygon points="240,130 290,170 190,170" fill="#C4622D" opacity="0.85"/>
+  <rect x="200" y="170" width="80" height="60" fill="#E8963C" opacity="0.75" rx="2"/>
+  <rect x="225" y="185" width="20" height="25" fill="#C4622D" opacity="0.9" rx="2"/>
+
+  <!-- Tree left -->
+  <rect x="155" y="200" width="8" height="40" fill="#3D5A4F" opacity="0.7" rx="2"/>
+  <ellipse cx="159" cy="190" rx="22" ry="28" fill="#4A8B7D" opacity="0.75"/>
+
+  <!-- Tree right -->
+  <rect x="322" y="195" width="8" height="45" fill="#3D5A4F" opacity="0.7" rx="2"/>
+  <ellipse cx="326" cy="183" rx="26" ry="32" fill="#5BA08F" opacity="0.7"/>
+
+  <!-- Small tree -->
+  <rect x="370" y="215" width="6" height="30" fill="#3D5A4F" opacity="0.6" rx="2"/>
+  <ellipse cx="373" cy="208" rx="16" ry="20" fill="#4A8B7D" opacity="0.6"/>
+
+  <!-- Wind lines (mobility) -->
+  <path d="M 340 80 Q 370 70 400 80 Q 430 90 460 75" fill="none" stroke="#5BA0C8" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 350 100 Q 380 92 410 100 Q 440 108 465 96" fill="none" stroke="#5BA0C8" stroke-width="2.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M 360 118 Q 385 112 415 118" fill="none" stroke="#5BA0C8" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+</svg>

@@ -12,8 +12,7 @@ menu:
 
 # Liens sociaux
 social:
-- {icon: 'linkedin',   link: 'https://linkedin.com/company/scenario-asso'}
-- {icon: 'instagram',  link: 'https://instagram.com/scenario_asso'}
+- {icon: 'linkedin',   link: 'https://www.linkedin.com/in/marine-teissedre-2356a4254/'}
 - {icon: 'envelope',   link: 'mailto:marine.teissedre@student-cs.fr'}
 
 # Textes de l'interface

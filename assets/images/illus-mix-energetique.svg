@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
+  <rect width="480" height="340" fill="#F5EFE6" rx="8"/>
+
+  <!-- Central circle -->
+  <circle cx="240" cy="170" r="70" fill="none" stroke="#111" stroke-width="2" opacity="0.12"/>
+  <circle cx="240" cy="170" r="110" fill="none" stroke="#111" stroke-width="1.5" opacity="0.08"/>
+
+  <!-- Arc segments — the 4 indicators -->
+  <!-- Coût — terracotta -->
+  <path d="M240 170 L240 60 A110 110 0 0 1 350 225 Z" fill="#C4622D" opacity="0.22"/>
+  <path d="M240 170 L240 100 A70 70 0 0 1 308 213 Z" fill="#C4622D" opacity="0.45"/>
+
+  <!-- CO2 — teal -->
+  <path d="M240 170 L350 225 A110 110 0 0 1 130 225 Z" fill="#4A8B7D" opacity="0.22"/>
+  <path d="M240 170 L308 213 A70 70 0 0 1 172 213 Z" fill="#4A8B7D" opacity="0.45"/>
+
+  <!-- Matières — blue -->
+  <path d="M240 170 L130 225 A110 110 0 0 1 240 60 Z" fill="#5BA0C8" opacity="0.22"/>
+  <path d="M240 170 L172 213 A70 70 0 0 1 240 100 Z" fill="#5BA0C8" opacity="0.45"/>
+
+  <!-- Center dot -->
+  <circle cx="240" cy="170" r="12" fill="#111" opacity="0.08"/>
+  <circle cx="240" cy="170" r="5" fill="#C4622D"/>
+
+  <!-- Labels -->
+  <text x="272" y="108" font-family="Inter,sans-serif" font-size="11" fill="#C4622D" font-weight="600" opacity="0.9">COÛT</text>
+  <text x="316" y="248" font-family="Inter,sans-serif" font-size="11" fill="#4A8B7D" font-weight="600" opacity="0.9">CO₂</text>
+  <text x="108" y="248" font-family="Inter,sans-serif" font-size="11" fill="#5BA0C8" font-weight="600" opacity="0.9">MATIÈRES</text>
+  <text x="192" y="318" font-family="Inter,sans-serif" font-size="11" fill="#111" font-weight="600" opacity="0.5">SOUVERAINETÉ</text>
+
+  <!-- Needle / indicator -->
+  <line x1="240" y1="170" x2="298" y2="112" stroke="#C4622D" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+  <circle cx="298" cy="112" r="4" fill="#C4622D" opacity="0.9"/>
+
+  <!-- Organic flow lines around -->
+  <path d="M 60 60 Q 100 40 140 65 Q 180 90 160 130" fill="none" stroke="#E8963C" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M 65 70 Q 105 52 143 76" fill="none" stroke="#E8963C" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+
+  <path d="M 400 60 Q 430 90 420 130 Q 410 160 390 175" fill="none" stroke="#4A8B7D" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+  <path d="M 408 68 Q 436 100 426 138" fill="none" stroke="#4A8B7D" stroke-width="2" stroke-linecap="round" opacity="0.25"/>
+</svg>
