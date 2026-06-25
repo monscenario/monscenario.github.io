@@ -14,11 +14,11 @@ permalink: /association
 
   <!-- Intro -->
   <p style="font-size:1.05rem; line-height:1.8; margin-bottom:2rem;">
-    Scénario est une association qui transforme les grands rapports scientifiques — GIEC, RTE, AIE — en expériences vécues et accessibles à tous. Notre conviction : on ne comprend vraiment la transition énergétique qu'en la jouant, en faisant des choix, en se trompant, en débattant.
+    Nucléaire ou renouvelables ? Sobriété ou souveraineté ? Coût ou climat ? Ces débats tournent en rond parce qu'on manque d'outils pour raisonner en système — pour voir les arbitrages, les contraintes, les conséquences.
   </p>
 
   <p style="font-size:1.05rem; line-height:1.8; margin-bottom:3.5rem;">
-    Nos ateliers s'adressent aux lycéens, aux citoyens curieux, aux collectivités et aux entreprises. Durée : 2h. Format : jeu de simulation en 3 temps.
+    Un scénario, ce n'est pas une prédiction. C'est un chemin cohérent vers un futur possible — comme le font RTE ou l'ADEME. Notre conviction : ce raisonnement doit être accessible à tous ceux qui vont prendre les décisions de demain. Pas leur donner la bonne réponse. Leur donner les outils pour construire la leur.
   </p>
 
   <!-- Tag coloré -->
@@ -57,7 +57,7 @@ permalink: /association
   <!-- Partie 3 -->
   <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4.5rem; flex-wrap:wrap;">
     <div style="flex:1; min-width:220px;">
-      <img src="{{ site.baseurl }}/assets/images/illus-ressources.svg" alt="Ressources mondiales" style="width:100%; border-radius:8px; display:block;">
+      <img src="{{ site.baseurl }}/assets/images/international_ressources.jpeg" alt="Ressources mondiales" style="width:100%; border-radius:8px; display:block;">
     </div>
     <div style="flex:2; min-width:260px;">
       <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.13em; color:#5BA0C8; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 3</p>
