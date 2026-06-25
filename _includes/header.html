@@ -14,7 +14,6 @@
 
     <!-- Right Side (Contact, etc) -->
     <div class="header-right">
-      <a href="{{ site.github.url }}/contact" class="menu-link-secondary">CONTACT</a>
     </div>
 
     <!-- Mobile dropdown -->
@@ -26,7 +25,6 @@
         {% for item in site.data.settings.menu %}
           <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name | upcase }}</a>
         {% endfor %}
-        <a href="{{ site.github.url }}/contact" class="menu-link">CONTACT</a>
       </div>
     </div>
   </div>

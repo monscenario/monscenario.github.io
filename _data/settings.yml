@@ -7,17 +7,14 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Nos programmes',  url: 'programmes'}
-- {name: 'Qui sommes-nous ?', url: 'association'}
-- {name: 'Qui êtes-vous ?', url: 'public'}
-- {name: 'Calendrier',      url: 'calendrier'}
+- {name: "Présentation de l'asso", url: 'association'}
 - {name: 'Blog',            url: 'blog'}
 
 # Liens sociaux
 social:
 - {icon: 'linkedin',   link: 'https://linkedin.com/company/scenario-asso'}
 - {icon: 'instagram',  link: 'https://instagram.com/scenario_asso'}
-- {icon: 'envelope',   link: 'mailto:contact@scenario-asso.fr'}
+- {icon: 'envelope',   link: 'mailto:marine.teissedre@student-cs.fr'}
 
 # Textes de l'interface
 pagination:
