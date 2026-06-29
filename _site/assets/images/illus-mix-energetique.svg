@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
+  <rect width="480" height="340" fill="#F5EFE6" rx="8"/>
+
+  <!-- Title -->
+  <text x="240" y="38" font-family="Inter,sans-serif" font-size="12" fill="#888" text-anchor="middle" letter-spacing="2">4 INDICATEURS EN TEMPS RÉEL</text>
+
+  <!-- Gauge 1 — Coût -->
+  <g transform="translate(52, 70)">
+    <text x="48" y="0" font-family="Inter,sans-serif" font-size="11" fill="#C4622D" font-weight="700" text-anchor="middle" letter-spacing="1">COÛT</text>
+    <!-- Arc background -->
+    <path d="M 4 90 A 44 44 0 0 1 92 90" fill="none" stroke="#e8d0c0" stroke-width="10" stroke-linecap="round"/>
+    <!-- Arc fill -->
+    <path d="M 4 90 A 44 44 0 0 1 75 35" fill="none" stroke="#C4622D" stroke-width="10" stroke-linecap="round"/>
+    <!-- Needle -->
+    <line x1="48" y1="90" x2="74" y2="36" stroke="#C4622D" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="48" cy="90" r="4" fill="#C4622D"/>
+    <text x="48" y="110" font-family="Inter,sans-serif" font-size="10" fill="#888" text-anchor="middle">€/MWh</text>
+  </g>
+
+  <!-- Gauge 2 — CO2 -->
+  <g transform="translate(172, 70)">
+    <text x="48" y="0" font-family="Inter,sans-serif" font-size="11" fill="#4A8B7D" font-weight="700" text-anchor="middle" letter-spacing="1">CO₂</text>
+    <path d="M 4 90 A 44 44 0 0 1 92 90" fill="none" stroke="#c8deda" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 4 90 A 44 44 0 0 1 48 46" fill="none" stroke="#4A8B7D" stroke-width="10" stroke-linecap="round"/>
+    <line x1="48" y1="90" x2="48" y2="47" stroke="#4A8B7D" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="48" cy="90" r="4" fill="#4A8B7D"/>
+    <text x="48" y="110" font-family="Inter,sans-serif" font-size="10" fill="#888" text-anchor="middle">MtCO₂eq</text>
+  </g>
+
+  <!-- Gauge 3 — Matières -->
+  <g transform="translate(292, 70)">
+    <text x="48" y="0" font-family="Inter,sans-serif" font-size="11" fill="#5BA0C8" font-weight="700" text-anchor="middle" letter-spacing="1">MATIÈRES</text>
+    <path d="M 4 90 A 44 44 0 0 1 92 90" fill="none" stroke="#c5dcea" stroke-width="10" stroke-linecap="round"/>
+    <path d="M 4 90 A 44 44 0 0 1 85 57" fill="none" stroke="#5BA0C8" stroke-width="10" stroke-linecap="round"/>
+    <line x1="48" y1="90" x2="84" y2="58" stroke="#5BA0C8" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="48" cy="90" r="4" fill="#5BA0C8"/>
+    <text x="48" y="110" font-family="Inter,sans-serif" font-size="10" fill="#888" text-anchor="middle">Li · Cu · Co</text>
+  </g>
+
+  <!-- Gauge 4 — Souveraineté -->
+  <g transform="translate(52, 210)">
+    <text x="88" y="0" font-family="Inter,sans-serif" font-size="11" fill="#E8963C" font-weight="700" text-anchor="middle" letter-spacing="1">SOUVERAINETÉ</text>
+    <!-- Horizontal bar track -->
+    <rect x="0" y="20" width="176" height="12" rx="6" fill="#f0dfc0"/>
+    <!-- Bar fill -->
+    <rect x="0" y="20" width="110" height="12" rx="6" fill="#E8963C"/>
+    <!-- Tick marks -->
+    <line x1="44" y1="16" x2="44" y2="38" stroke="#fff" stroke-width="1.5"/>
+    <line x1="88" y1="16" x2="88" y2="38" stroke="#fff" stroke-width="1.5"/>
+    <line x1="132" y1="16" x2="132" y2="38" stroke="#fff" stroke-width="1.5"/>
+    <text x="0" y="54" font-family="Inter,sans-serif" font-size="9" fill="#aaa">Autonome</text>
+    <text x="140" y="54" font-family="Inter,sans-serif" font-size="9" fill="#aaa" text-anchor="end">Dépendant</text>
+  </g>
+
+  <!-- Mix source bars (right side) -->
+  <g transform="translate(290, 200)">
+    <text x="0" y="0" font-family="Inter,sans-serif" font-size="11" fill="#888" font-weight="600" letter-spacing="1">MIX CHOISI</text>
+    <!-- Bar labels + fills -->
+    <text x="0" y="22" font-family="Inter,sans-serif" font-size="10" fill="#555">Solaire</text>
+    <rect x="65" y="12" width="120" height="10" rx="3" fill="#eee"/>
+    <rect x="65" y="12" width="76" height="10" rx="3" fill="#E8963C" opacity="0.8"/>
+
+    <text x="0" y="42" font-family="Inter,sans-serif" font-size="10" fill="#555">Éolien</text>
+    <rect x="65" y="32" width="120" height="10" rx="3" fill="#eee"/>
+    <rect x="65" y="32" width="50" height="10" rx="3" fill="#5BA0C8" opacity="0.8"/>
+
+    <text x="0" y="62" font-family="Inter,sans-serif" font-size="10" fill="#555">Nucléaire</text>
+    <rect x="65" y="52" width="120" height="10" rx="3" fill="#eee"/>
+    <rect x="65" y="52" width="90" height="10" rx="3" fill="#4A8B7D" opacity="0.8"/>
+
+    <text x="0" y="82" font-family="Inter,sans-serif" font-size="10" fill="#555">Gaz</text>
+    <rect x="65" y="72" width="120" height="10" rx="3" fill="#eee"/>
+    <rect x="65" y="72" width="22" height="10" rx="3" fill="#C4622D" opacity="0.6"/>
+  </g>
+</svg>

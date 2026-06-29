@@ -9,17 +9,22 @@ permalink: /association
   <!-- Titre -->
   <h1 style="font-size:2.4rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.3em;">Scénario</h1>
   <p style="font-size:1.2rem; color:#555; margin-top:0; margin-bottom:3rem; border-bottom:1px solid #eee; padding-bottom:2rem;">
-    Des ateliers pour comprendre la transition énergétique — par le jeu.
+    Des ateliers pour comprendre la transition énergétique par le jeu.
   </p>
 
-  <!-- Intro -->
-  <p style="font-size:1.05rem; line-height:1.8; margin-bottom:2rem;">
-    Nucléaire ou renouvelables ? Sobriété ou souveraineté ? Coût ou climat ? Ces débats tournent en rond parce qu'on manque d'outils pour raisonner en système — pour voir les arbitrages, les contraintes, les conséquences.
-  </p>
+  <!-- Intro avec le Halo -->
+  <div class="interactive-halo-container" style="position: relative; padding: 40px; margin: 0 -40px 3.5rem -40px; border-radius: 12px; overflow: hidden;">
+    <div class="interactive-halo-bg"></div>
+    <div style="position: relative; z-index: 1;">
+      <p style="font-size:1.05rem; line-height:1.8; margin-bottom:2rem; margin-top:0;">
+        Nucléaire ou renouvelables ? Sobriété ou souveraineté ? Coût ou climat ? Ces débats tournent en rond parce qu'on manque d'outils pour raisonner en système: pour voir les arbitrages, les contraintes, les conséquences.
+      </p>
 
-  <p style="font-size:1.05rem; line-height:1.8; margin-bottom:3.5rem;">
-    Un scénario, ce n'est pas une prédiction. C'est un chemin cohérent vers un futur possible — comme le font RTE ou l'ADEME. Notre conviction : ce raisonnement doit être accessible à tous ceux qui vont prendre les décisions de demain. Pas leur donner la bonne réponse. Leur donner les outils pour construire la leur.
-  </p>
+      <p style="font-size:1.05rem; line-height:1.8; margin-bottom:0;">
+        Un scénario, ce n'est pas une prédiction. C'est un chemin cohérent vers un futur possible comme le font RTE ou l'ADEME. Notre conviction : ce raisonnement doit être accessible à tous ceux qui vont prendre les décisions de demain. Pas leur donner la bonne réponse. Leur donner les outils pour construire la leur.
+      </p>
+    </div>
+  </div>
 
   <!-- Tag coloré -->
   <div style="display:inline-block; background:#C4622D; color:#fff; font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 14px; border-radius:3px; margin-bottom:3rem;">L'atelier en 3 temps</div>
@@ -63,7 +68,7 @@ permalink: /association
       <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.13em; color:#5BA0C8; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 3</p>
       <h2 style="font-size:1.4rem; font-weight:700; margin:0 0 0.8em;">Confronter ses choix au monde réel</h2>
       <p style="font-size:1rem; line-height:1.75; color:#333;">
-        Y a-t-il assez de lithium, de cuivre, de cobalt pour généraliser le modèle choisi à la planète entière ? Ce dernier temps ancre les décisions individuelles dans les tensions géopolitiques mondiales — et ouvre le débat.
+        Y a-t-il assez de lithium, de cuivre, de cobalt pour généraliser le modèle choisi à la planète entière ? Ce dernier temps ancre les décisions individuelles dans les tensions géopolitiques mondiales et ouvre le débat.
       </p>
     </div>
   </div>

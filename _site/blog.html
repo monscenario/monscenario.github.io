@@ -68,8 +68,8 @@
     <header class="site-header" id="site-header">
   <div class="header-inner">
     <!-- Logo -->
-    <a href="/" class="site-logo" aria-label="Scénario — Accueil">
-      <span class="logo-text">SCÉNARIO</span>
+    <a href="/" class="site-logo" aria-label="Scénario — Accueil" style="display:flex; align-items:center; text-decoration:none;">
+      <img src="/assets/img/logo-scenario.png" alt="Scénario" style="height:44px; display:block;">
     </a>
 
     <!-- Desktop Navigation -->
@@ -182,15 +182,11 @@
         <p>Des ateliers et jeux pour comprendre, débattre et s'approprier les grands scénarios de transition socio-énergétique. Pour le grand public, les écoles et les entreprises.</p>
         <div class="footer-social">
           
-            <a href="https://linkedin.com/company/scenario-asso" target="_blank" rel="noopener" aria-label="linkedin">
+            <a href="https://www.linkedin.com/in/marine-teissedre-2356a4254/" target="_blank" rel="noopener" aria-label="linkedin">
               <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
             </a>
           
-            <a href="https://instagram.com/scenario_asso" target="_blank" rel="noopener" aria-label="instagram">
-              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-            </a>
-          
-            <a href="mailto:contact@scenario-asso.fr" target="_blank" rel="noopener" aria-label="envelope">
+            <a href="mailto:marine.teissedre@student-cs.fr" target="_blank" rel="noopener" aria-label="envelope">
               <i class="fa-brands fa-envelope" aria-hidden="true"></i>
             </a>
           
@@ -216,8 +212,7 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:contact@scenario-asso.fr">contact@scenario-asso.fr</a></li>
-          <li><a href="/calendrier">Prochain atelier →</a></li>
+          <li><a href="mailto:marine.teissedre@student-cs.fr">marine.teissedre@student-cs.fr</a></li>
           <li><a href="/association">À propos</a></li>
           <li><a href="/blog">Blog &amp; ressources</a></li>
         </ul>
@@ -236,5 +231,20 @@
   </div>
 </footer>
 
+
+    <script>
+      document.addEventListener('mousemove', (e) => {
+        const haloBgs = document.querySelectorAll('.interactive-halo-bg');
+        haloBgs.forEach(waveBg => {
+          const rect = waveBg.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          const mask = `radial-gradient(circle 180px at ${x}px ${y}px, black 0%, rgba(0, 0, 0, 0.20) 100%)`;
+          waveBg.style.webkitMaskImage = mask;
+          waveBg.style.maskImage = mask;
+        });
+      });
+    </script>
   </body>
 </html>

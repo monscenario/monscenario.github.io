@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fff;
+  background: transparent;
   overflow: hidden;
   margin-top: -$header-thickness;
   padding-top: $header-thickness;
@@ -137,7 +137,7 @@
 /* --- Programs Section --- */
 .programs-minimal {
   padding: 100px 0;
-  background: #fff;
+  background: transparent;
   border-top: 1px solid #E5E5E5;
 }
 
@@ -228,7 +228,7 @@
 /* --- Latest Posts (list style) --- */
 .latest-posts-minimal {
   padding: 80px 40px 100px;
-  background: #fff;
+  background: transparent;
   border-top: 1px solid #E5E5E5;
   max-width: 1400px;
   margin: 0 auto;

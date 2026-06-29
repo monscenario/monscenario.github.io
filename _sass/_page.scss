@@ -9,7 +9,7 @@
 
 /* ---- Page Hero ---- */
 .page-hero {
-  background: #fff;
+  background: transparent;
   padding: 100px 40px 80px;
   border-bottom: 1px solid #E5E5E5;
 
@@ -53,7 +53,7 @@
   padding: 80px 40px;
 
   &.bg-light  { background: #FAFAFA; }
-  &.bg-white  { background: #fff; }
+  &.bg-white  { background: transparent; }
   &.bg-off    { background: #F3F3F3; }
   &.bg-navy   { background: #111; } /* kept for compat */
 
@@ -121,7 +121,7 @@
 }
 
 .prog-item {
-  background: #fff;
+  background: transparent;
   padding: 48px;
 
   &:hover { background: #FAFAFA; }
@@ -268,7 +268,7 @@
 }
 
 .team-card {
-  background: #fff;
+  background: transparent;
   padding: 40px 36px;
 
   .team-avatar {

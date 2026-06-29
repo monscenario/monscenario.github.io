@@ -12,15 +12,35 @@ figure, hr, fieldset, legend {
 
 *, *::before, *::after { box-sizing: border-box; }
 
-/* Body */
+/* HTML & Body */
+html {
+  background: #fff;
+}
+
 body {
   font-family: $body-font-family;
   font-size: 16px;
   color: #333;
-  background: #fff;
+  background: transparent;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Interactive Wave Background (Localized) */
+.interactive-halo-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: url('/assets/img/3.png') center / 100% 100% no-repeat;
+  pointer-events: none;
+  
+  /* Initial mask hidden outside screen */
+  mask-image: radial-gradient(circle 180px at -1000px -1000px, black 0%, rgba(0, 0, 0, 0.20) 100%);
+  -webkit-mask-image: radial-gradient(circle 180px at -1000px -1000px, black 0%, rgba(0, 0, 0, 0.20) 100%);
 }
 
 /* Headings */
