@@ -252,10 +252,10 @@
 
     // Magnetic hover effect on all text and interactive elements
     const textElements = document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, span, a, button, input, li, .prog-item');
-    // Inverted colors for difference mode: 
-    // #a2839f (vert), #2d80c1 (orange), #1f2d4c (beige), #6ea2c5 (marron)
-    // + #0b3d3d (rose pastel), #020269 (jaune pastel), #522719 (bleu clair)
-    const cursorColors = ['#a2839f', '#2d80c1', '#1f2d4c', '#6ea2c5', '#0b3d3d', '#020269', '#522719'];
+    // Inverted colors for difference mode to render warm pastels: 
+    // #002546 (pêche), #077c86 (corail), #01274e (orange clair), #00969e (rouge pastel), 
+    // #2d80c1 (terracotta), #1f2d4c (beige chaud), #0b3d3d (rose pastel), #020269 (jaune pastel)
+    const cursorColors = ['#002546', '#077c86', '#01274e', '#00969e', '#2d80c1', '#1f2d4c', '#0b3d3d', '#020269'];
 
     textElements.forEach(el => {
       el.addEventListener('mouseenter', () => {
