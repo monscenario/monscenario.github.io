@@ -4,7 +4,7 @@ title: Présentation de l'asso
 permalink: /association
 ---
 
-<div style="max-width:860px; margin:80px auto; padding:0 32px; font-family:'Inter',sans-serif; color:#111;">
+<div style="max-width:860px; margin:150px auto 80px; padding:0 32px; font-family:'Inter',sans-serif; color:#111;">
 
   <!-- Titre -->
   <h1 style="font-size:2.4rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.3em;">Scénario</h1>
@@ -12,29 +12,24 @@ permalink: /association
     Des ateliers pour comprendre la transition énergétique par le jeu.
   </p>
 
-  <!-- Intro avec le Halo -->
-  <div class="interactive-halo-container" style="position: relative; padding: 40px; margin: 0 -40px 3.5rem -40px; border-radius: 12px; overflow: hidden;">
-    <div class="interactive-halo-bg"></div>
-    <div style="position: relative; z-index: 1;">
-      <p style="font-size:1.05rem; line-height:1.8; margin-bottom:2rem; margin-top:0;">
-        Nucléaire ou renouvelables ? Sobriété ou souveraineté ? Coût ou climat ? Ces débats tournent en rond parce qu'on manque d'outils pour raisonner en système: pour voir les arbitrages, les contraintes, les conséquences.
-      </p>
+  <!-- Intro -->
+  <p class="reveal-on-scroll" style="font-size:1.05rem; line-height:1.8; margin-bottom:2rem; margin-top:0;">
+    Nucléaire ou renouvelables ? Sobriété ou souveraineté ? Coût ou climat ? Ces débats tournent en rond parce qu'on manque d'outils pour raisonner en système: pour voir les arbitrages, les contraintes, les conséquences.
+  </p>
 
-      <p style="font-size:1.05rem; line-height:1.8; margin-bottom:0;">
-        Un scénario, ce n'est pas une prédiction. C'est un chemin cohérent vers un futur possible comme le font RTE ou l'ADEME. Notre conviction : ce raisonnement doit être accessible à tous ceux qui vont prendre les décisions de demain. Pas leur donner la bonne réponse. Leur donner les outils pour construire la leur.
-      </p>
-    </div>
-  </div>
+  <p class="reveal-on-scroll" style="font-size:1.05rem; line-height:1.8; margin-bottom:3.5rem;">
+    Un scénario, ce n'est pas une prédiction. C'est un chemin cohérent vers un futur possible comme le font RTE ou l'ADEME. Notre conviction : ce raisonnement doit être accessible à tous ceux qui vont prendre les décisions de demain. Pas leur donner la bonne réponse. Leur donner les outils pour construire la leur.
+  </p>
 
   <!-- Tag coloré -->
-  <div style="display:inline-block; background:#C4622D; color:#fff; font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 14px; border-radius:3px; margin-bottom:3rem;">L'atelier en 3 temps</div>
+  <div class="reveal-on-scroll" style="display:inline-block; background:#C4622D; color:#fff; font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 14px; border-radius:3px; margin-bottom:3rem;">L'atelier en 3 temps</div>
 
   <hr style="border:none; border-top:1px solid #eee; margin-bottom:3.5rem;">
 
   <!-- Partie 1 -->
-  <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4.5rem; flex-wrap:wrap;">
+  <div class="reveal-on-scroll" style="display:flex; gap:3rem; align-items:center; margin-bottom:4.5rem; flex-wrap:wrap;">
     <div style="flex:1; min-width:220px;">
-      <img src="{{ site.baseurl }}/assets/images/illus-mode-de-vie.svg" alt="Mode de vie" style="width:100%; border-radius:8px; display:block;">
+      <img src="{{ site.baseurl }}/assets/images/environnement_mode_de_vie_1782397542481.png" alt="Mode de vie" style="width:100%; border-radius:8px; display:block; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
     </div>
     <div style="flex:2; min-width:260px;">
       <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.13em; color:#C4622D; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 1</p>
@@ -55,14 +50,14 @@ permalink: /association
       </p>
     </div>
     <div style="flex:1; min-width:220px; order:2;">
-      <img src="{{ site.baseurl }}/assets/images/illus-mix-energetique.svg" alt="Mix énergétique" style="width:100%; border-radius:8px; display:block;">
+      <img src="{{ site.baseurl }}/assets/images/mix_energetique_1782397551726.png" alt="Mix énergétique" style="width:100%; border-radius:8px; display:block; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
     </div>
   </div>
 
   <!-- Partie 3 -->
   <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4.5rem; flex-wrap:wrap;">
     <div style="flex:1; min-width:220px;">
-      <img src="{{ site.baseurl }}/assets/images/international_ressources.jpeg" alt="Ressources mondiales" style="width:100%; border-radius:8px; display:block;">
+      <img src="{{ site.baseurl }}/assets/images/international_ressources_1782397561507.png" alt="Ressources mondiales" style="width:100%; border-radius:8px; display:block; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
     </div>
     <div style="flex:2; min-width:260px;">
       <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.13em; color:#5BA0C8; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 3</p>

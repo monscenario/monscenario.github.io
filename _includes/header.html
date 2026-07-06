@@ -2,13 +2,13 @@
   <div class="header-inner">
     <!-- Logo -->
     <a href="{{ site.github.url }}/" class="site-logo" aria-label="Scénario — Accueil" style="display:flex; align-items:center; text-decoration:none;">
-      <img src="{{ site.baseurl }}/assets/img/logo-scenario.png" alt="Scénario" style="height:44px; display:block;">
+      <img src="{{ site.baseurl }}/assets/img/logo-scenario.png" alt="Scénario" style="height:86px; display:block;">
     </a>
 
     <!-- Desktop Navigation -->
     <nav class="menu-list" aria-label="Navigation principale">
       {% for item in site.data.settings.menu %}
-        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link {% if page.url contains item.url %}active{% endif %}">{{ item.name | upcase }}</a>
+        <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link dynamic-underline {% if page.url contains item.url %}active{% endif %}">{{ item.name | upcase }}</a>
       {% endfor %}
     </nav>
 
@@ -23,7 +23,7 @@
       </button>
       <div class="dropdown-content">
         {% for item in site.data.settings.menu %}
-          <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link">{{ item.name | upcase }}</a>
+          <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link dynamic-underline">{{ item.name | upcase }}</a>
         {% endfor %}
       </div>
     </div>

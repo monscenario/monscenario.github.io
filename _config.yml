@@ -14,7 +14,6 @@ plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-t
 title:               "Scénario"
 description:         "Ateliers et jeux pour s'approprier les futurs énergétiques"
 author:              "Association Scénario"
-email:               "contact@scenario-asso.fr"
 url:                 ""
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines

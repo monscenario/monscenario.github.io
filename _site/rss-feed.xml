@@ -6,33 +6,5 @@
 		<link></link>
 		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
 		
-			<item>
-				<title>Article 1 — Titre à compléter</title>
-				
-					<dc:creator>Scénario</dc:creator>
-				
-				
-					<description>&lt;p&gt;&lt;em&gt;Remplacez ce texte par votre article.&lt;/em&gt;&lt;/p&gt;
-</description>
-				
-				<pubDate>Sun, 01 Jun 2025 10:00:00 +0200</pubDate>
-				<link>http://localhost:4000/article-1</link>
-				<guid isPermaLink="true">http://localhost:4000/article-1</guid>
-			</item>
-		
-			<item>
-				<title>Article 2 — Titre à compléter</title>
-				
-					<dc:creator>Scénario</dc:creator>
-				
-				
-					<description>&lt;p&gt;&lt;em&gt;Remplacez ce texte par votre article.&lt;/em&gt;&lt;/p&gt;
-</description>
-				
-				<pubDate>Thu, 15 May 2025 10:00:00 +0200</pubDate>
-				<link>http://localhost:4000/article-2</link>
-				<guid isPermaLink="true">http://localhost:4000/article-2</guid>
-			</item>
-		
 	</channel>
 </rss>
