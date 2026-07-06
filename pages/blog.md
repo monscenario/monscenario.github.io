@@ -29,21 +29,21 @@ permalink: /blog
   <!-- Ressources externes -->
   <h2 style="font-size:1.3rem; font-weight:700; margin:2.5rem 0 1.2em;">Ressources</h2>
 
-  <a href="https://www.ademe.fr/les-futurs-en-transition/" target="_blank" rel="noopener" style="display:flex; gap:1.4rem; align-items:stretch; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:1.6rem; text-decoration:none; color:inherit;">
-    <img src="{{ site.baseurl }}/assets/img/ademe-preview.png" alt="Les Futurs en Transition — ADEME" style="width:180px; min-width:180px; height:130px; object-fit:cover; border-right:1px solid #eee;">
-    <div style="padding:1rem 1.2rem 1rem 0; display:flex; flex-direction:column; justify-content:center;">
+  <a href="https://www.ademe.fr/les-futurs-en-transition/" target="_blank" rel="noopener" class="interactive-hover reveal-on-scroll" style="display:block; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:2.5rem; text-decoration:none; color:inherit; box-shadow:0 4px 15px rgba(0,0,0,0.03);">
+    <img src="{{ site.baseurl }}/assets/img/ademe-preview.png" alt="Les Futurs en Transition — ADEME" style="width:100%; height:260px; object-fit:cover; border-bottom:1px solid #eee; display:block;">
+    <div style="padding:1.5rem;">
       <span style="font-size:0.75rem; color:#999; letter-spacing:0.08em; text-transform:uppercase;">ADEME</span>
-      <h3 style="font-size:1.05rem; font-weight:600; margin:0.3em 0 0.4em; color:#111;">Les Futurs en Transition</h3>
-      <p style="color:#555; font-size:0.92rem; line-height:1.6; margin:0;">Quatre scénarios prospectifs de l'ADEME pour atteindre la neutralité carbone de la France à l'horizon 2050.</p>
+      <h3 style="font-size:1.2rem; font-weight:600; margin:0.3em 0 0.4em; color:#111;">Les Futurs en Transition</h3>
+      <p style="color:#555; font-size:0.95rem; line-height:1.6; margin:0;">Quatre scénarios prospectifs de l'ADEME pour atteindre la neutralité carbone de la France à l'horizon 2050.</p>
     </div>
   </a>
 
-  <a href="https://rte-futursenergetiques2050.com" target="_blank" rel="noopener" style="display:flex; gap:1.4rem; align-items:stretch; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:1.6rem; text-decoration:none; color:inherit;">
-    <img src="{{ site.baseurl }}/assets/img/rte-preview.png" alt="Futurs énergétiques 2050 — RTE" style="width:180px; min-width:180px; height:130px; object-fit:cover; border-right:1px solid #eee;">
-    <div style="padding:1rem 1.2rem 1rem 0; display:flex; flex-direction:column; justify-content:center;">
+  <a href="https://rte-futursenergetiques2050.com" target="_blank" rel="noopener" class="interactive-hover reveal-on-scroll" style="display:block; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:2.5rem; text-decoration:none; color:inherit; box-shadow:0 4px 15px rgba(0,0,0,0.03);">
+    <img src="{{ site.baseurl }}/assets/img/rte-preview.png" alt="Futurs énergétiques 2050 — RTE" style="width:100%; height:260px; object-fit:cover; border-bottom:1px solid #eee; display:block;">
+    <div style="padding:1.5rem;">
       <span style="font-size:0.75rem; color:#999; letter-spacing:0.08em; text-transform:uppercase;">RTE</span>
-      <h3 style="font-size:1.05rem; font-weight:600; margin:0.3em 0 0.4em; color:#111;">Futurs énergétiques 2050</h3>
-      <p style="color:#555; font-size:0.92rem; line-height:1.6; margin:0;">Six scénarios de RTE pour la neutralité carbone du système électrique français, avec ou sans relance du nucléaire.</p>
+      <h3 style="font-size:1.2rem; font-weight:600; margin:0.3em 0 0.4em; color:#111;">Futurs énergétiques 2050</h3>
+      <p style="color:#555; font-size:0.95rem; line-height:1.6; margin:0;">Six scénarios de RTE pour la neutralité carbone du système électrique français, avec ou sans relance du nucléaire.</p>
     </div>
   </a>
 
