@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
   <!-- Background warm cream -->
-  <rect width="480" height="340" fill="#F5EFE6" rx="8"/>
+  <rect width="480" height="340" fill="#ffffff" rx="8"/>
 
   <!-- Organic hills -->
   <path d="M0 260 Q80 190 160 220 Q240 250 320 200 Q380 165 480 210 L480 340 L0 340 Z" fill="#4A8B7D" opacity="0.25"/>

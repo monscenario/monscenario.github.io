@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel>
-		<title>Scénario</title>
+		<title>SCÉNARIO</title>
 		<description>Ateliers et jeux pour s&apos;approprier les futurs énergétiques</description>
 		<link></link>
 		<atom:link href="/rss-feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Rapport HCC 2026 : ce que ça change pour nos ateliers</title>
+				
+				
+					<description>&lt;p&gt;Le Haut Conseil pour le Climat vient de publier son rapport annuel 2026. Sans surprise, le constat est sévère : la France n’est pas sur la trajectoire de ses propres objectifs climatiques. Mais ce qui nous intéresse chez Scénario, c’est moins le constat que ce qu’il révèle sur la façon dont on raisonne collectivement la transition.&lt;/p&gt;
+</description>
+				
+				<pubDate>Wed, 01 Jul 2026 00:00:00 +0200</pubDate>
+				<link>http://localhost:4000/rapport-hcc-2026</link>
+				<guid isPermaLink="true">http://localhost:4000/rapport-hcc-2026</guid>
+			</item>
 		
 	</channel>
 </rss>

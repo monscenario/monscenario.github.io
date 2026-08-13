@@ -3,7 +3,7 @@
 <head>
   <title>
     
-      404: Page not found | Scénario
+      404: Page not found | SCÉNARIO
     
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@
   <meta name="theme-color" content="#0F1B2D">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="404: Page not found | Scénario">
+  <meta property="og:title" content="404: Page not found | SCÉNARIO">
   <meta property="og:description" content="Ateliers et jeux pour s'approprier les futurs énergétiques">
   <meta property="og:type" content="website">
   
@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Feed -->
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Scénario" />
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="SCÉNARIO" />
 
   <!-- Google Analytics -->
   <script>
@@ -45,7 +45,7 @@
 
   <!-- Jekyll SEO -->
   <!-- Begin Jekyll SEO tag v2.9.0 -->
-<title>404: Page not found | Scénario</title>
+<title>404: Page not found | SCÉNARIO</title>
 <meta name="generator" content="Jekyll v4.4.1" />
 <meta property="og:title" content="404: Page not found" />
 <meta name="author" content="Association Scénario" />
@@ -54,7 +54,7 @@
 <meta name="twitter:description" property="og:description" content="Ateliers et jeux pour s’approprier les futurs énergétiques" />
 <link rel="canonical" href="http://localhost:4000/404.html" />
 <meta property="og:url" content="http://localhost:4000/404.html" />
-<meta property="og:site_name" content="Scénario" />
+<meta property="og:site_name" content="SCÉNARIO" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="404: Page not found" />
@@ -66,16 +66,32 @@
 
 
 <body>
-  <!-- Fonds interactifs sur les côtés pour encadrer le texte -->
-  <div
-    style="position: fixed; left: 0; top: 0; bottom: 0; width: calc(50% - 430px); z-index: -1; overflow: hidden; pointer-events: none;">
-    <div class="interactive-halo-bg" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></div>
+  <!-- Fonds interactifs sur les côtés -->
+  <div style="position:fixed; left:0; top:70px; bottom:0; width:calc(50% - 430px); z-index:-1; overflow:hidden; pointer-events:none;">
+    <div class="interactive-halo-bg" style="position:absolute; width:100%; height:100%; left:0; top:0;"></div>
   </div>
-  <div
-    style="position: fixed; right: 0; top: 0; bottom: 0; width: calc(50% - 430px); z-index: -1; overflow: hidden; pointer-events: none;">
-    <div class="interactive-halo-bg" data-flipped="true"
-      style="position: absolute; width: 100%; height: 100%; left: 0; top: 0; transform: scaleX(-1);"></div>
+  <div style="position:fixed; right:0; top:70px; bottom:0; width:calc(50% - 430px); z-index:-1; overflow:hidden; pointer-events:none;">
+    <div class="interactive-halo-bg" style="position:absolute; width:100%; height:100%; left:0; top:0; transform:scaleX(-1);"></div>
   </div>
+
+  <!-- Splash screen — première visite uniquement -->
+  <script>
+    if (!sessionStorage.getItem('splashShown')) {
+      sessionStorage.setItem('splashShown', '1');
+      document.write('<div id="page-splash" style="position:fixed;inset:0;z-index:9999;background:#fff;display:flex;align-items:center;justify-content:center;transition:opacity 0.5s ease;"><img src="/assets/img/logo-scenario.png" alt="Scénario" style="height:80px;"></div>');
+    }
+  </script>
+  <script>
+    (function() {
+      var splash = document.getElementById('page-splash');
+      if (splash) {
+        setTimeout(function() {
+          splash.style.opacity = '0';
+          setTimeout(function() { splash.remove(); }, 500);
+        }, 2000);
+      }
+    })();
+  </script>
 
   <header class="site-header" id="site-header">
   <div class="header-inner">
@@ -89,7 +105,7 @@
       
         <a href="/association" class="menu-link dynamic-underline ">PRÉSENTATION DE L'ASSO</a>
       
-        <a href="/blog" class="menu-link dynamic-underline ">BLOG</a>
+        <a href="/blog" class="menu-link dynamic-underline ">ACTUALITÉS ET RESSOURCES</a>
       
     </nav>
 
@@ -106,7 +122,7 @@
         
           <a href="/association" class="menu-link dynamic-underline">PRÉSENTATION DE L'ASSO</a>
         
-          <a href="/blog" class="menu-link dynamic-underline">BLOG</a>
+          <a href="/blog" class="menu-link dynamic-underline">ACTUALITÉS ET RESSOURCES</a>
         
       </div>
     </div>
@@ -138,7 +154,7 @@
 
       <!-- Brand column -->
       <div class="footer-brand">
-        <span class="footer-logo-text">Scén<span>a</span>rio</span>
+        <span class="footer-logo-text">SCÉNARIO</span>
         <p>Des ateliers et jeux pour comprendre, débattre et s'approprier les grands scénarios de transition socio-énergétique. Pour le grand public, les écoles et les entreprises.</p>
         <div class="footer-social">
           
@@ -146,7 +162,7 @@
               <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
             </a>
           
-            <a href="mailto:marine.teissedre@student-cs.fr" target="_blank" rel="noopener" aria-label="envelope">
+            <a href="mailto:monscenarioenergetique@gmail.com" target="_blank" rel="noopener" aria-label="envelope">
               <i class="fa-brands fa-envelope" aria-hidden="true"></i>
             </a>
           
@@ -160,7 +176,7 @@
           
             <li><a href="/association">Présentation de l'asso</a></li>
           
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/blog">Actualités et ressources</a></li>
           
         </ul>
       </div>
@@ -169,7 +185,7 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:marine.teissedre@student-cs.fr">marine.teissedre@student-cs.fr</a></li>
+          <li><a href="mailto:monscenarioenergetique@gmail.com">monscenarioenergetique@gmail.com</a></li>
           <li><a href="/association">À propos</a></li>
           <li><a href="/blog">Blog &amp; ressources</a></li>
         </ul>
@@ -179,7 +195,7 @@
 
     <div class="footer-bottom">
       <div class="footer-description">
-        <a href="/">© 2026 Scénario — Association loi 1901</a>
+        <a href="/">© 2026 SCÉNARIO — Association loi 1901</a>
       </div>
       <div class="footer-description">
         Basé sur les travaux de RTE, GIEC, ADEME &amp; Négawatt

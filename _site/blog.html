@@ -3,17 +3,17 @@
 <head>
   <title>
     
-      Blog | Scénario
+      Actualités et ressources | SCÉNARIO
     
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <meta name="description" content="Articles, retours d'ateliers et éclairages sur les scénarios socio-énergétiques par l'association Scénario.">
+  <meta name="description" content="Actualités et ressources sur les scénarios énergétiques et la transition climatique.">
   <meta name="theme-color" content="#0F1B2D">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Blog | Scénario">
-  <meta property="og:description" content="Articles, retours d'ateliers et éclairages sur les scénarios socio-énergétiques par l'association Scénario.">
+  <meta property="og:title" content="Actualités et ressources | SCÉNARIO">
+  <meta property="og:description" content="Actualités et ressources sur les scénarios énergétiques et la transition climatique.">
   <meta property="og:type" content="website">
   
 
@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Feed -->
-  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Scénario" />
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="SCÉNARIO" />
 
   <!-- Google Analytics -->
   <script>
@@ -45,37 +45,53 @@
 
   <!-- Jekyll SEO -->
   <!-- Begin Jekyll SEO tag v2.9.0 -->
-<title>Blog | Scénario</title>
+<title>Actualités et ressources | SCÉNARIO</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Blog" />
+<meta property="og:title" content="Actualités et ressources" />
 <meta name="author" content="Association Scénario" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Articles, retours d’ateliers et éclairages sur les scénarios socio-énergétiques par l’association Scénario." />
-<meta name="twitter:description" property="og:description" content="Articles, retours d’ateliers et éclairages sur les scénarios socio-énergétiques par l’association Scénario." />
+<meta name="description" content="Actualités et ressources sur les scénarios énergétiques et la transition climatique." />
+<meta name="twitter:description" property="og:description" content="Actualités et ressources sur les scénarios énergétiques et la transition climatique." />
 <link rel="canonical" href="http://localhost:4000/blog" />
 <meta property="og:url" content="http://localhost:4000/blog" />
-<meta property="og:site_name" content="Scénario" />
+<meta property="og:site_name" content="SCÉNARIO" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:title" content="Blog" />
+<meta name="twitter:title" content="Actualités et ressources" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Association Scénario"},"description":"Articles, retours d’ateliers et éclairages sur les scénarios socio-énergétiques par l’association Scénario.","headline":"Blog","url":"http://localhost:4000/blog"}</script>
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Association Scénario"},"description":"Actualités et ressources sur les scénarios énergétiques et la transition climatique.","headline":"Actualités et ressources","url":"http://localhost:4000/blog"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
 
 
 <body>
-  <!-- Fonds interactifs sur les côtés pour encadrer le texte -->
-  <div
-    style="position: fixed; left: 0; top: 0; bottom: 0; width: calc(50% - 430px); z-index: -1; overflow: hidden; pointer-events: none;">
-    <div class="interactive-halo-bg" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></div>
+  <!-- Fonds interactifs sur les côtés -->
+  <div style="position:fixed; left:0; top:70px; bottom:0; width:calc(50% - 430px); z-index:-1; overflow:hidden; pointer-events:none;">
+    <div class="interactive-halo-bg" style="position:absolute; width:100%; height:100%; left:0; top:0;"></div>
   </div>
-  <div
-    style="position: fixed; right: 0; top: 0; bottom: 0; width: calc(50% - 430px); z-index: -1; overflow: hidden; pointer-events: none;">
-    <div class="interactive-halo-bg" data-flipped="true"
-      style="position: absolute; width: 100%; height: 100%; left: 0; top: 0; transform: scaleX(-1);"></div>
+  <div style="position:fixed; right:0; top:70px; bottom:0; width:calc(50% - 430px); z-index:-1; overflow:hidden; pointer-events:none;">
+    <div class="interactive-halo-bg" style="position:absolute; width:100%; height:100%; left:0; top:0; transform:scaleX(-1);"></div>
   </div>
+
+  <!-- Splash screen — première visite uniquement -->
+  <script>
+    if (!sessionStorage.getItem('splashShown')) {
+      sessionStorage.setItem('splashShown', '1');
+      document.write('<div id="page-splash" style="position:fixed;inset:0;z-index:9999;background:#fff;display:flex;align-items:center;justify-content:center;transition:opacity 0.5s ease;"><img src="/assets/img/logo-scenario.png" alt="Scénario" style="height:80px;"></div>');
+    }
+  </script>
+  <script>
+    (function() {
+      var splash = document.getElementById('page-splash');
+      if (splash) {
+        setTimeout(function() {
+          splash.style.opacity = '0';
+          setTimeout(function() { splash.remove(); }, 500);
+        }, 2000);
+      }
+    })();
+  </script>
 
   <header class="site-header" id="site-header">
   <div class="header-inner">
@@ -89,7 +105,7 @@
       
         <a href="/association" class="menu-link dynamic-underline ">PRÉSENTATION DE L'ASSO</a>
       
-        <a href="/blog" class="menu-link dynamic-underline active">BLOG</a>
+        <a href="/blog" class="menu-link dynamic-underline active">ACTUALITÉS ET RESSOURCES</a>
       
     </nav>
 
@@ -106,7 +122,7 @@
         
           <a href="/association" class="menu-link dynamic-underline">PRÉSENTATION DE L'ASSO</a>
         
-          <a href="/blog" class="menu-link dynamic-underline">BLOG</a>
+          <a href="/blog" class="menu-link dynamic-underline">ACTUALITÉS ET RESSOURCES</a>
         
       </div>
     </div>
@@ -128,34 +144,41 @@
 </script>
 
   <div class="content-wrapper">
-    <div style="max-width:760px; margin:150px auto 80px; padding:0 32px; font-family:'Inter',sans-serif; color:#111;">
+    <div style="max-width:760px; margin:130px auto 80px; padding:0 32px; font-family:'Inter',sans-serif; color:#111;">
 
-  <h1 style="font-size:2.4rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.3em;">Publications</h1>
-  <p style="font-size:1.05rem; color:#555; margin-top:0; margin-bottom:3rem; border-bottom:1px solid #eee; padding-bottom:2rem;">
-    Retours d'ateliers, éclairages scientifiques, actualités de l'association.
-  </p>
+  <h1 style="font-size:2.4rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.3em;">Actualités</h1>
+  <div style="border-bottom:1px solid #eee; margin-bottom:3rem;"></div>
 
-  <!-- Articles existants -->
-  
-
-  <!-- Ressources externes -->
-  <h2 style="font-size:1.3rem; font-weight:700; margin:2.5rem 0 1.2em;">Ressources</h2>
-
-  <a href="https://www.ademe.fr/les-futurs-en-transition/" target="_blank" rel="noopener" class="interactive-hover reveal-on-scroll" style="display:block; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:2.5rem; text-decoration:none; color:inherit; box-shadow:0 4px 15px rgba(0,0,0,0.03);">
-    <img src="/assets/img/ademe-preview.png" alt="Les Futurs en Transition — ADEME" style="width:100%; height:260px; object-fit:cover; border-bottom:1px solid #eee; display:block;" />
-    <div style="padding:1.5rem;">
-      <span style="font-size:0.75rem; color:#999; letter-spacing:0.08em; text-transform:uppercase;">ADEME</span>
-      <h3 style="font-size:1.2rem; font-weight:600; margin:0.3em 0 0.4em; color:#111;">Les Futurs en Transition</h3>
-      <p style="color:#555; font-size:0.95rem; line-height:1.6; margin:0;">Quatre scénarios prospectifs de l'ADEME pour atteindre la neutralité carbone de la France à l'horizon 2050.</p>
+  <a href="https://www.hautconseilclimat.fr/publications/dangers-climatiques-la-france-face-a-ses-responsabilites/" target="_blank" rel="noopener" style="display:block; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:2.5rem; text-decoration:none; color:inherit; box-shadow:0 4px 15px rgba(0,0,0,0.04);">
+    <div style="padding:1.5rem 1.8rem;">
+      <span style="font-size:0.72rem; font-weight:700; color:#999; letter-spacing:0.1em; text-transform:uppercase;">HCC · 7 août 2026</span>
+      <h3 style="font-size:1.15rem; font-weight:700; margin:0.5em 0 0.6em; color:#111; line-height:1.35;">Rapport annuel 2026 — Dangers climatiques : la France face à ses responsabilités</h3>
+      <p style="color:#777; font-size:0.9rem; line-height:1.65; margin:0 0 0.8rem; font-style:italic;">Chaque année, le Haut Conseil pour le Climat (HCC) dresse un état des lieux de l'action climatique française. Sa dernière publication résonne particulièrement avec les enjeux que nous explorons à travers nos ateliers sur les scénarios énergétiques.</p>
+      <p style="color:#555; font-size:0.93rem; line-height:1.7; margin:0 0 1.2rem;">Alors que la France a vécu deux canicules en mai et juin 2026 et une flambée des prix du pétrole et du gaz, le HCC alerte sur l'urgence de changer d'échelle dans les politiques climatiques. Le rapport formule des recommandations pour renforcer l'efficacité des politiques actuelles et engage une nouvelle génération de politiques publiques à l'horizon 2030/2035.</p>
+      <span style="font-size:0.88rem; color:#111; font-weight:600;">Lire le rapport →</span>
     </div>
   </a>
 
-  <a href="https://rte-futursenergetiques2050.com" target="_blank" rel="noopener" class="interactive-hover reveal-on-scroll" style="display:block; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:2.5rem; text-decoration:none; color:inherit; box-shadow:0 4px 15px rgba(0,0,0,0.03);">
-    <img src="/assets/img/rte-preview.png" alt="Futurs énergétiques 2050 — RTE" style="width:100%; height:260px; object-fit:cover; border-bottom:1px solid #eee; display:block;" />
-    <div style="padding:1.5rem;">
-      <span style="font-size:0.75rem; color:#999; letter-spacing:0.08em; text-transform:uppercase;">RTE</span>
-      <h3 style="font-size:1.2rem; font-weight:600; margin:0.3em 0 0.4em; color:#111;">Futurs énergétiques 2050</h3>
-      <p style="color:#555; font-size:0.95rem; line-height:1.6; margin:0;">Six scénarios de RTE pour la neutralité carbone du système électrique français, avec ou sans relance du nucléaire.</p>
+  <hr style="border:none; border-top:1px solid #eee; margin:2.5rem 0;" />
+  <h2 style="font-size:1.3rem; font-weight:700; margin:0 0 1.5rem;">Ressources</h2>
+
+  <a href="https://www.ademe.fr/les-futurs-en-transition/" target="_blank" rel="noopener" style="display:block; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:2rem; text-decoration:none; color:inherit; box-shadow:0 4px 15px rgba(0,0,0,0.04);">
+    <img src="/assets/img/ademe-preview.png" alt="Les Futurs en Transition — ADEME" style="width:100%; height:200px; object-fit:cover; border-bottom:1px solid #eee; display:block;" />
+    <div style="padding:1.2rem 1.5rem;">
+      <span style="font-size:0.72rem; font-weight:700; color:#999; letter-spacing:0.1em; text-transform:uppercase;">ADEME</span>
+      <h3 style="font-size:1.1rem; font-weight:700; margin:0.4em 0 0.6em; color:#111;">Les Futurs en Transition</h3>
+      <p style="color:#555; font-size:0.93rem; line-height:1.7; margin:0 0 1rem;">Quatre scénarios prospectifs de l'ADEME pour atteindre la neutralité carbone de la France à l'horizon 2050.</p>
+      <span style="font-size:0.88rem; color:#111; font-weight:600;">Consulter →</span>
+    </div>
+  </a>
+
+  <a href="https://rte-futursenergetiques2050.com" target="_blank" rel="noopener" style="display:block; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:2rem; text-decoration:none; color:inherit; box-shadow:0 4px 15px rgba(0,0,0,0.04);">
+    <img src="/assets/img/rte-preview.png" alt="Futurs énergétiques 2050 — RTE" style="width:100%; height:200px; object-fit:cover; border-bottom:1px solid #eee; display:block;" />
+    <div style="padding:1.2rem 1.5rem;">
+      <span style="font-size:0.72rem; font-weight:700; color:#999; letter-spacing:0.1em; text-transform:uppercase;">RTE</span>
+      <h3 style="font-size:1.1rem; font-weight:700; margin:0.4em 0 0.6em; color:#111;">Futurs énergétiques 2050</h3>
+      <p style="color:#555; font-size:0.93rem; line-height:1.7; margin:0 0 1rem;">Six scénarios de RTE pour la neutralité carbone du système électrique français, avec ou sans relance du nucléaire.</p>
+      <span style="font-size:0.88rem; color:#111; font-weight:600;">Consulter →</span>
     </div>
   </a>
 
@@ -168,7 +191,7 @@
 
       <!-- Brand column -->
       <div class="footer-brand">
-        <span class="footer-logo-text">Scén<span>a</span>rio</span>
+        <span class="footer-logo-text">SCÉNARIO</span>
         <p>Des ateliers et jeux pour comprendre, débattre et s'approprier les grands scénarios de transition socio-énergétique. Pour le grand public, les écoles et les entreprises.</p>
         <div class="footer-social">
           
@@ -176,7 +199,7 @@
               <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
             </a>
           
-            <a href="mailto:marine.teissedre@student-cs.fr" target="_blank" rel="noopener" aria-label="envelope">
+            <a href="mailto:monscenarioenergetique@gmail.com" target="_blank" rel="noopener" aria-label="envelope">
               <i class="fa-brands fa-envelope" aria-hidden="true"></i>
             </a>
           
@@ -190,7 +213,7 @@
           
             <li><a href="/association">Présentation de l'asso</a></li>
           
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/blog">Actualités et ressources</a></li>
           
         </ul>
       </div>
@@ -199,7 +222,7 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <ul>
-          <li><a href="mailto:marine.teissedre@student-cs.fr">marine.teissedre@student-cs.fr</a></li>
+          <li><a href="mailto:monscenarioenergetique@gmail.com">monscenarioenergetique@gmail.com</a></li>
           <li><a href="/association">À propos</a></li>
           <li><a href="/blog">Blog &amp; ressources</a></li>
         </ul>
@@ -209,7 +232,7 @@
 
     <div class="footer-bottom">
       <div class="footer-description">
-        <a href="/">© 2026 Scénario — Association loi 1901</a>
+        <a href="/">© 2026 SCÉNARIO — Association loi 1901</a>
       </div>
       <div class="footer-description">
         Basé sur les travaux de RTE, GIEC, ADEME &amp; Négawatt

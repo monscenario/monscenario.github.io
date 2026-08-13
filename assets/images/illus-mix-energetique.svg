@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
-  <rect width="480" height="340" fill="#F5EFE6" rx="8"/>
+  <rect width="480" height="340" fill="#ffffff" rx="8"/>
 
   <!-- Title -->
   <text x="240" y="38" font-family="Inter,sans-serif" font-size="12" fill="#888" text-anchor="middle" letter-spacing="2">4 INDICATEURS EN TEMPS RÉEL</text>

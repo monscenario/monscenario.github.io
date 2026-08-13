@@ -8,12 +8,12 @@ google-ID: ''
 
 menu:
 - {name: "Présentation de l'asso", url: 'association'}
-- {name: 'Blog',            url: 'blog'}
+- {name: 'Actualités et ressources', url: 'blog'}
 
 # Liens sociaux
 social:
 - {icon: 'linkedin',   link: 'https://www.linkedin.com/in/marine-teissedre-2356a4254/'}
-- {icon: 'envelope',   link: 'mailto:marine.teissedre@student-cs.fr'}
+- {icon: 'envelope',   link: 'mailto:monscenarioenergetique@gmail.com'}
 
 # Textes de l'interface
 pagination:

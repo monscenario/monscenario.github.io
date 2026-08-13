@@ -11,7 +11,7 @@ permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Scénario — Association
-title:               "Scénario"
+title:               "SCÉNARIO"
 description:         "Ateliers et jeux pour s'approprier les futurs énergétiques"
 author:              "Association Scénario"
 url:                 ""

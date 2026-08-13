@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340">
-  <rect width="480" height="340" fill="#F5EFE6" rx="8"/>
+  <rect width="480" height="340" fill="#ffffff" rx="8"/>
 
   <!-- Topographic contour lines — inspired by the pitch deck watercolor pattern -->
   <path d="M 60 170 Q 120 100 200 120 Q 280 140 340 100 Q 400 60 450 90" fill="none" stroke="#C4622D" stroke-width="3" stroke-linecap="round" opacity="0.7"/>

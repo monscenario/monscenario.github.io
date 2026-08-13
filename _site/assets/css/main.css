@@ -30,19 +30,39 @@ figure, hr, fieldset, legend {
   box-sizing: border-box;
 }
 
+/* Telegraph font — place Telegraph.woff2 in /assets/fonts/ */
+@font-face {
+  font-family: "Telegraph";
+  src: url("/assets/fonts/Telegraph.woff2") format("woff2"), url("/assets/fonts/Telegraph.woff") format("woff");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
 /* HTML & Body */
 html {
-  background: #fff;
+  background: #ffffff;
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Telegraph", "Space Grotesk", "Inter", sans-serif;
   font-size: 16px;
   color: #333;
   background: transparent;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scroll reveal animations */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Interactive Wave Background (Localized) */
@@ -54,7 +74,7 @@ body {
   height: 100%;
   z-index: 0;
   background-image: url("/assets/img/3_vertical.png");
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   pointer-events: none;
@@ -234,6 +254,7 @@ pre code {
 .content-wrapper {
   width: 100%;
   min-height: calc(100vh - 70px);
+  padding-top: 70px;
 }
 
 /* ============================================

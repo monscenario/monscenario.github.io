@@ -4,63 +4,58 @@ title: Présentation de l'asso
 permalink: /association
 ---
 
-<div style="max-width:860px; margin:150px auto 80px; padding:0 32px; font-family:'Inter',sans-serif; color:#111;">
+<div style="max-width:860px; margin:130px auto 80px; padding:0 32px; font-family:'Inter',sans-serif; color:#111;">
 
-  <!-- Titre -->
-  <h1 style="font-size:2.4rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.3em;">Scénario</h1>
-  <p style="font-size:1.2rem; color:#555; margin-top:0; margin-bottom:3rem; border-bottom:1px solid #eee; padding-bottom:2rem;">
+  <h1 style="font-size:2.4rem; font-weight:700; letter-spacing:-0.02em; margin-bottom:0.3em; color:#1A3D2B;">SCÉNARIO</h1>
+  <p style="font-size:1.2rem; color:#1A3D2B; margin-top:0; margin-bottom:3rem; border-bottom:1px solid #eee; padding-bottom:2rem;">
     Des ateliers pour comprendre la transition énergétique par le jeu.
   </p>
 
-  <!-- Intro -->
-  <p class="reveal-on-scroll" style="font-size:1.05rem; line-height:1.8; margin-bottom:2rem; margin-top:0;">
-    Nucléaire ou renouvelables ? Sobriété ou souveraineté ? Coût ou climat ? Ces débats tournent en rond parce qu'on manque d'outils pour raisonner en système: pour voir les arbitrages, les contraintes, les conséquences.
+  <p style="font-size:1.05rem; line-height:1.8; margin-bottom:2rem;">
+    Nucléaire ou renouvelables ? Sobriété ou souveraineté ? Coût ou climat ? Répondre à ces questions demande de raisonner en système : voir les arbitrages, les contraintes, les conséquences. C'est ce que permettent les scénarios énergétiques, comme ceux de RTE ou de l'ADEME.
   </p>
 
-  <p class="reveal-on-scroll" style="font-size:1.05rem; line-height:1.8; margin-bottom:3.5rem;">
-    Un scénario, ce n'est pas une prédiction. C'est un chemin cohérent vers un futur possible comme le font RTE ou l'ADEME. Notre conviction : ce raisonnement doit être accessible à tous ceux qui vont prendre les décisions de demain. Pas leur donner la bonne réponse. Leur donner les outils pour construire la leur.
+  <p style="font-size:1.05rem; line-height:1.8; margin-bottom:3.5rem;">
+    Scénario propose des ateliers pour apprendre à construire et décrypter ces scénarios, afin que chacun puisse se forger sa propre opinion sur les choix énergétiques de demain.
   </p>
-
-  <!-- Tag coloré -->
-  <div class="reveal-on-scroll" style="display:inline-block; background:#C4622D; color:#fff; font-size:0.8rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; padding:6px 14px; border-radius:3px; margin-bottom:3rem;">L'atelier en 3 temps</div>
 
   <hr style="border:none; border-top:1px solid #eee; margin-bottom:3.5rem;">
 
   <!-- Partie 1 -->
-  <div class="reveal-on-scroll" style="display:flex; gap:3rem; align-items:center; margin-bottom:4.5rem; flex-wrap:wrap;">
+  <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4rem; flex-wrap:wrap;">
     <div style="flex:1; min-width:220px;">
-      <img src="{{ site.baseurl }}/assets/images/environnement_mode_de_vie_1782397542481.png" alt="Mode de vie" style="width:100%; border-radius:8px; display:block; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+      <img src="{{ site.baseurl }}/assets/images/environnement_mode_de_vie_1782397542481.png" alt="Mode de vie" style="width:100%; border-radius:6px; display:block;">
     </div>
     <div style="flex:2; min-width:260px;">
-      <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.13em; color:#C4622D; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 1</p>
+      <p style="font-size:0.8rem; font-weight:600; letter-spacing:0.1em; color:#999; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 1</p>
       <h2 style="font-size:1.4rem; font-weight:700; margin:0 0 0.8em;">Choisir son mode de vie</h2>
       <p style="font-size:1rem; line-height:1.75; color:#333;">
-        Le joueur choisit un environnement (ville, campagne, mer…) puis construit son mode de vie : habitat, mobilité, alimentation. Ces choix définissent sa demande en énergie — le point de départ de tout.
+        Le joueur choisit un environnement (ville, campagne, mer…) puis construit son mode de vie : habitat, mobilité, alimentation. Ces choix définissent sa demande en énergie, le point de départ de tout.
       </p>
     </div>
   </div>
 
   <!-- Partie 2 -->
-  <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4.5rem; flex-wrap:wrap;">
+  <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4rem; flex-wrap:wrap;">
     <div style="flex:2; min-width:260px; order:1;">
-      <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.13em; color:#4A8B7D; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 2</p>
+      <p style="font-size:0.8rem; font-weight:600; letter-spacing:0.1em; color:#999; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 2</p>
       <h2 style="font-size:1.4rem; font-weight:700; margin:0 0 0.8em;">Construire son mix énergétique</h2>
       <p style="font-size:1rem; line-height:1.75; color:#333;">
         Le joueur compose son mix de production (solaire, éolien, nucléaire, gaz…) pour couvrir la demande. Quatre indicateurs en temps réel : coût, CO₂, empreinte matières, souveraineté. Un mix instable oblige à des arbitrages douloureux.
       </p>
     </div>
     <div style="flex:1; min-width:220px; order:2;">
-      <img src="{{ site.baseurl }}/assets/images/mix_energetique_1782397551726.png" alt="Mix énergétique" style="width:100%; border-radius:8px; display:block; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+      <img src="{{ site.baseurl }}/assets/images/mix_energetique_1782397551726.png" alt="Mix énergétique" style="width:100%; border-radius:6px; display:block;">
     </div>
   </div>
 
   <!-- Partie 3 -->
-  <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4.5rem; flex-wrap:wrap;">
+  <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4rem; flex-wrap:wrap;">
     <div style="flex:1; min-width:220px;">
-      <img src="{{ site.baseurl }}/assets/images/international_ressources_1782397561507.png" alt="Ressources mondiales" style="width:100%; border-radius:8px; display:block; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+      <img src="{{ site.baseurl }}/assets/images/international_ressources.jpeg" alt="Ressources mondiales" style="width:100%; border-radius:6px; display:block;">
     </div>
     <div style="flex:2; min-width:260px;">
-      <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.13em; color:#5BA0C8; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 3</p>
+      <p style="font-size:0.8rem; font-weight:600; letter-spacing:0.1em; color:#999; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 3</p>
       <h2 style="font-size:1.4rem; font-weight:700; margin:0 0 0.8em;">Confronter ses choix au monde réel</h2>
       <p style="font-size:1rem; line-height:1.75; color:#333;">
         Y a-t-il assez de lithium, de cuivre, de cobalt pour généraliser le modèle choisi à la planète entière ? Ce dernier temps ancre les décisions individuelles dans les tensions géopolitiques mondiales et ouvre le débat.
@@ -68,11 +63,10 @@ permalink: /association
     </div>
   </div>
 
-  <!-- Contact -->
   <hr style="border:none; border-top:1px solid #eee; margin-bottom:2.5rem;">
   <p style="font-size:0.95rem; color:#777; text-align:center;">
-    Vous souhaitez organiser un atelier ?&nbsp;&nbsp;
-    <a href="mailto:marine.teissedre@student-cs.fr" style="color:#C4622D; font-weight:600; text-decoration:underline;">marine.teissedre@student-cs.fr</a>
+     L'atelier est actuellement en cours de test et de fabrication. Si le sujet vous intéresse, écrivez-nous :&nbsp;&nbsp;
+    <a href="mailto:monscenarioenergetique@gmail.com" style="color:#111; font-weight:600; text-decoration:underline;">monscenarioenergetique@gmail.com</a>
   </p>
 
 </div>
