@@ -43,4 +43,16 @@ permalink: /blog
     </div>
   </a>
 
+  <hr style="border:none; border-top:1px solid #eee; margin:2.5rem 0;">
+  <h2 style="font-size:1.3rem; font-weight:700; margin:0 0 1.5rem;">L'association</h2>
+
+  <a href="https://21st.centralesupelec.com/en/nos-actualites/21st-by-centralesupelec-launches-sprint-its-acceleration-program-for-18-deeptech-and-impact-student-projects" target="_blank" rel="noopener" style="display:block; border:1px solid #eee; border-radius:10px; overflow:hidden; margin-bottom:2rem; text-decoration:none; color:inherit; box-shadow:0 4px 15px rgba(0,0,0,0.04);">
+    <div style="padding:1.4rem 1.8rem;">
+      <span style="font-size:0.72rem; font-weight:700; color:#999; letter-spacing:0.1em; text-transform:uppercase;">21st by CentraleSupélec</span>
+      <h3 style="font-size:1.1rem; font-weight:700; margin:0.5em 0 0.6em; color:#111; line-height:1.35;">Sprint — Programme d'accélération pour 18 projets étudiants deeptech & impact</h3>
+      <p style="color:#555; font-size:0.93rem; line-height:1.7; margin:0 0 1.2rem;">Scénario fait partie des 18 projets sélectionnés pour la première cohorte du programme Sprint de 21st by CentraleSupélec, un accélérateur intensif de 4 mois pour préparer les projets étudiants les plus avancés à passer à l'échelle.</p>
+      <span style="font-size:0.88rem; color:#111; font-weight:600;">Lire l'article →</span>
+    </div>
+  </a>
+
 </div>
