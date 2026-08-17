@@ -20,6 +20,8 @@ permalink: /association
   /* Cache le logo du header sur cette page */
   .site-logo { opacity: 0; transition: opacity 0.3s ease; }
   .site-logo.visible { opacity: 1; }
+  /* Colle l'image directement sous le bandeau */
+  .content-wrapper { padding-top: 0 !important; margin-top: 0 !important; }
 </style>
 
 <!-- Logo flottant — z-index SOUS le header pour disparaître derrière -->
@@ -40,8 +42,6 @@ permalink: /association
 
   function init() {
     headerH  = header.offsetHeight;
-    // L'image doit être sous le header fixe : on retire le padding du wrapper
-    document.querySelector('.content-wrapper').style.paddingTop = '0';
     var heroRect = heroWrap.getBoundingClientRect();
 
     startW = 260;

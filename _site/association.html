@@ -74,34 +74,6 @@
     <div class="interactive-halo-bg" style="position:absolute; width:100%; height:100%; left:0; top:0; transform:scaleX(-1);"></div>
   </div>
 
-  <!-- Splash screen — première visite uniquement -->
-  <div id="page-splash" style="position:fixed;inset:0;z-index:9999;background:#fff;display:flex;align-items:center;justify-content:center;opacity:1;transition:opacity 0.6s ease;">
-    <img id="splash-img" src="/assets/img/image-intro.png" alt="Scénario" style="max-width:100%;max-height:100%;object-fit:contain;">
-  </div>
-  <script>
-    (function() {
-      var splash = document.getElementById('page-splash');
-      if (sessionStorage.getItem('splashShown')) {
-        splash.style.display = 'none';
-        return;
-      }
-      sessionStorage.setItem('splashShown', '1');
-      function hideSplash() {
-        setTimeout(function() {
-          splash.style.opacity = '0';
-          setTimeout(function() { splash.style.display = 'none'; }, 600);
-        }, 2000);
-      }
-      var img = document.getElementById('splash-img');
-      if (img.complete) {
-        hideSplash();
-      } else {
-        img.addEventListener('load', hideSplash);
-        img.addEventListener('error', hideSplash);
-      }
-    })();
-  </script>
-
   <header class="site-header" id="site-header">
   <div class="header-inner">
     <!-- Logo -->
@@ -169,6 +141,8 @@
   /* Cache le logo du header sur cette page */
   .site-logo { opacity: 0; transition: opacity 0.3s ease; }
   .site-logo.visible { opacity: 1; }
+  /* Colle l'image directement sous le bandeau */
+  .content-wrapper { padding-top: 0 !important; margin-top: 0 !important; }
 </style>
 
 <!-- Logo flottant — z-index SOUS le header pour disparaître derrière -->
@@ -188,8 +162,6 @@
 
   function init() {
     headerH  = header.offsetHeight;
-    // L'image doit être sous le header fixe : on retire le padding du wrapper
-    document.querySelector('.content-wrapper').style.paddingTop = '0';
     var heroRect = heroWrap.getBoundingClientRect();
 
     startW = 260;
