@@ -126,7 +126,7 @@
 
   <div class="content-wrapper">
     <div id="hero-image-wrap" style="position:relative; width:100%; line-height:0;">
-  <img id="hero-image" src="/assets/img/top-image.png" alt="Scénario" style="width:100%; display:block; margin-top:0;" />
+  <img id="hero-image" src="/assets/img/top-image.jpg" alt="Scénario" style="width:100%; display:block; margin-top:0;" />
   <div style="width:100%; background:#fff; padding:24px 10% 60px; box-sizing:border-box; font-family:'Inter',sans-serif; line-height:1.9;">
     <p style="font-size:1.15rem; margin-bottom:1.5rem; color:#111; max-width:860px;">
       Nucléaire ou renouvelables ? Sobriété ou souveraineté ? Coût ou climat ? Répondre à ces questions demande de raisonner en système : voir les arbitrages, les contraintes, les conséquences. C'est ce que permettent les scénarios de société.
@@ -143,6 +143,11 @@
   .site-logo.visible { opacity: 1; }
   /* Colle l'image directement sous le bandeau */
   .content-wrapper { padding-top: 0 !important; margin-top: 0 !important; }
+  /* Image hero responsive */
+  #hero-image { width: 100%; display: block; height: auto; object-fit: cover; }
+  @media (max-width: 768px) {
+    #hero-image { height: 60vw; object-fit: cover; object-position: center center; }
+  }
 </style>
 
 <!-- Logo flottant — z-index SOUS le header pour disparaître derrière -->

@@ -22,6 +22,11 @@ permalink: /association
   .site-logo.visible { opacity: 1; }
   /* Colle l'image directement sous le bandeau */
   .content-wrapper { padding-top: 0 !important; margin-top: 0 !important; }
+  /* Image hero responsive */
+  #hero-image { width: 100%; display: block; height: auto; object-fit: cover; }
+  @media (max-width: 768px) {
+    #hero-image { height: 60vw; object-fit: cover; object-position: center center; }
+  }
 </style>
 
 <!-- Logo flottant — z-index SOUS le header pour disparaître derrière -->
