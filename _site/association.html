@@ -66,12 +66,12 @@
 
 
 <body>
-  <!-- Fonds interactifs sur les côtés -->
+  <!-- Bandes latérales -->
   <div style="position:fixed; left:0; top:70px; bottom:0; width:calc(50% - 430px); z-index:-1; overflow:hidden; pointer-events:none;">
-    <div class="interactive-halo-bg" style="position:absolute; width:100%; height:100%; left:0; top:0;"></div>
+    <div style="position:absolute; width:100%; height:100%; background-image:url('/assets/img/bande-left.jpg'); background-position:top center; background-size:cover; background-repeat:no-repeat;"></div>
   </div>
   <div style="position:fixed; right:0; top:70px; bottom:0; width:calc(50% - 430px); z-index:-1; overflow:hidden; pointer-events:none;">
-    <div class="interactive-halo-bg" style="position:absolute; width:100%; height:100%; left:0; top:0; transform:scaleX(-1);"></div>
+    <div style="position:absolute; width:100%; height:100%; background-image:url('/assets/img/bande-right.jpg'); background-position:top center; background-size:cover; background-repeat:no-repeat;"></div>
   </div>
 
   <header class="site-header" id="site-header">
@@ -147,6 +147,7 @@
   #hero-image { width: 100%; display: block; height: auto; object-fit: cover; }
   @media (max-width: 768px) {
     #hero-image { height: 60vw; object-fit: cover; object-position: center center; }
+    #hero-image-wrap p { text-align: left !important; }
   }
 </style>
 
@@ -166,10 +167,21 @@
   var startW, startX, startY, endW, endX, endY, scrollDist, headerH;
 
   function init() {
-    headerH  = header.offsetHeight;
+    headerH = header.offsetHeight;
     var heroRect = heroWrap.getBoundingClientRect();
 
-    startW = 260;
+    // Colle l'image sous le bandeau : mesure le gap réel et corrige
+    var gap = heroWrap.getBoundingClientRect().top - headerH;
+    if (gap > 0) heroWrap.style.marginTop = '-' + gap + 'px';
+
+    // Sur mobile : logo direct dans le header, pas d'animation
+    if (window.innerWidth <= 1080) {
+      floatingLogo.style.display = 'none';
+      headerLogo.classList.add('visible');
+      return;
+    }
+    floatingLogo.style.display = '';
+    startW = Math.min(260, window.innerWidth * 0.22);
     startX = heroRect.left + heroRect.width / 2 - startW / 2;
     startY = headerH + 20; // juste sous le bandeau
 
@@ -238,7 +250,7 @@
   <!-- Partie 1 -->
   <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4rem; flex-wrap:wrap;">
     <div style="flex:1; min-width:220px;">
-      <img src="/assets/images/environnement_mode_de_vie_1782397542481.png" alt="Mode de vie" style="width:100%; border-radius:6px; display:block;" />
+      <img src="/assets/images/image1-env.png" alt="Mode de vie" style="width:100%; border-radius:6px; display:block;" />
     </div>
     <div style="flex:2; min-width:260px;">
       <p style="font-size:0.8rem; font-weight:600; letter-spacing:0.1em; color:#999; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 1</p>
@@ -259,14 +271,14 @@
       </p>
     </div>
     <div style="flex:1; min-width:220px; order:2;">
-      <img src="/assets/images/mix_energetique_1782397551726.png" alt="Mix énergétique" style="width:100%; border-radius:6px; display:block;" />
+      <img src="/assets/images/image2-energy.png" alt="Mix énergétique" style="width:100%; border-radius:6px; display:block;" />
     </div>
   </div>
 
   <!-- Partie 3 -->
   <div style="display:flex; gap:3rem; align-items:center; margin-bottom:4rem; flex-wrap:wrap;">
     <div style="flex:1; min-width:220px;">
-      <img src="/assets/images/international_ressources.jpeg" alt="Ressources mondiales" style="width:100%; border-radius:6px; display:block;" />
+      <img src="/assets/images/image3-world.png" alt="Ressources mondiales" style="width:100%; border-radius:6px; display:block;" />
     </div>
     <div style="flex:2; min-width:260px;">
       <p style="font-size:0.8rem; font-weight:600; letter-spacing:0.1em; color:#999; text-transform:uppercase; margin-bottom:0.4em; margin-top:0;">Temps 3</p>
