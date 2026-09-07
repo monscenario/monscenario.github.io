@@ -182,3 +182,15 @@
   from { opacity: 0; transform: translateY(-8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
+
+@media (min-width: 1440px) {
+  .header-inner {
+    padding: 28px 60px;
+  }
+
+  .menu-link,
+  .menu-link-secondary {
+    font-size: 0.88rem;
+    letter-spacing: 0.07em;
+  }
+}

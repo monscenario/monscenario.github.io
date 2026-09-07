@@ -257,6 +257,11 @@ pre code {
   padding-top: 70px;
 }
 
+/* Page association : l'image hero colle directement sous le bandeau */
+body.association-page .content-wrapper {
+  padding-top: 0;
+}
+
 /* ============================================
    INTERACTIVE DESIGN & CUSTOM CURSOR
    ============================================ */
@@ -719,6 +724,16 @@ pre code {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media (min-width: 1440px) {
+  .header-inner {
+    padding: 28px 60px;
+  }
+  .menu-link,
+  .menu-link-secondary {
+    font-size: 0.88rem;
+    letter-spacing: 0.07em;
   }
 }
 /* ============================================

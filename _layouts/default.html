@@ -2,13 +2,15 @@
 <html lang="fr">
 {% include head.html %}
 
-<body>
+<body class="{{ page.body_class }}">
   <!-- Bandes latérales -->
+  {% assign bande_left  = page.bande_left  | default: 'bande-left.jpg' %}
+  {% assign bande_right = page.bande_right | default: 'bande-right.jpg' %}
   <div style="position:fixed; left:0; top:70px; bottom:0; width:calc(50% - 430px); z-index:-1; overflow:hidden; pointer-events:none;">
-    <div style="position:absolute; width:100%; height:100%; background-image:url('{{ site.baseurl }}/assets/img/bande-left.jpg'); background-position:top center; background-size:cover; background-repeat:no-repeat;"></div>
+    <div style="position:absolute; width:100%; height:100%; background-image:url('{{ site.baseurl }}/assets/img/{{ bande_left }}'); background-position:top center; background-size:cover; background-repeat:no-repeat;"></div>
   </div>
   <div style="position:fixed; right:0; top:70px; bottom:0; width:calc(50% - 430px); z-index:-1; overflow:hidden; pointer-events:none;">
-    <div style="position:absolute; width:100%; height:100%; background-image:url('{{ site.baseurl }}/assets/img/bande-right.jpg'); background-position:top center; background-size:cover; background-repeat:no-repeat;"></div>
+    <div style="position:absolute; width:100%; height:100%; background-image:url('{{ site.baseurl }}/assets/img/{{ bande_right }}'); background-position:top center; background-size:cover; background-repeat:no-repeat;"></div>
   </div>
 
   {% include header.html %}
@@ -38,8 +40,8 @@
       const dx = mouseX - cursorX;
       const dy = mouseY - cursorY;
 
-      cursorX += dx * 0.2;
-      cursorY += dy * 0.2;
+      cursorX += dx * 0.45;
+      cursorY += dy * 0.45;
 
       cursor.style.left = `${cursorX}px`;
       cursor.style.top = `${cursorY}px`;

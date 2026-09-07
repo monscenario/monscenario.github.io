@@ -213,6 +213,11 @@ pre {
   padding-top: $header-thickness;
 }
 
+/* Page association : l'image hero colle directement sous le bandeau */
+body.association-page .content-wrapper {
+  padding-top: 0;
+}
+
 /* ============================================
    INTERACTIVE DESIGN & CUSTOM CURSOR
    ============================================ */

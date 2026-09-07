@@ -65,8 +65,10 @@
 </head>
 
 
-<body>
+<body class="">
   <!-- Bandes latérales -->
+  
+  
   <div style="position:fixed; left:0; top:70px; bottom:0; width:calc(50% - 430px); z-index:-1; overflow:hidden; pointer-events:none;">
     <div style="position:absolute; width:100%; height:100%; background-image:url('/assets/img/bande-left.jpg'); background-position:top center; background-size:cover; background-repeat:no-repeat;"></div>
   </div>
@@ -86,12 +88,15 @@
       
         <a href="/association" class="menu-link dynamic-underline ">PRÉSENTATION DE L'ASSO</a>
       
-        <a href="/blog" class="menu-link dynamic-underline ">ACTUALITÉS ET RESSOURCES</a>
+        <a href="/ressources" class="menu-link dynamic-underline ">RESSOURCES ET ACTUALITÉS</a>
+      
+        <a href="/blog" class="menu-link dynamic-underline ">BLOG</a>
       
     </nav>
 
     <!-- Right Side (Contact, etc) -->
     <div class="header-right">
+      <a href="mailto:monscenarioenergetique@gmail.com" aria-label="Nous écrire" style="display:flex; align-items:center; opacity:0.6; transition:opacity 0.2s;" onmouseenter="this.style.opacity='1'" onmouseleave="this.style.opacity='0.6'"><img src="/assets/img/lettre-icone.png" alt="Contact" style="height:28px; display:block;"></a>
     </div>
 
     <!-- Mobile dropdown -->
@@ -103,7 +108,9 @@
         
           <a href="/association" class="menu-link dynamic-underline">PRÉSENTATION DE L'ASSO</a>
         
-          <a href="/blog" class="menu-link dynamic-underline">ACTUALITÉS ET RESSOURCES</a>
+          <a href="/ressources" class="menu-link dynamic-underline">RESSOURCES ET ACTUALITÉS</a>
+        
+          <a href="/blog" class="menu-link dynamic-underline">BLOG</a>
         
       </div>
     </div>
@@ -157,7 +164,9 @@
           
             <li><a href="/association">Présentation de l'asso</a></li>
           
-            <li><a href="/blog">Actualités et ressources</a></li>
+            <li><a href="/ressources">Ressources et actualités</a></li>
+          
+            <li><a href="/blog">Blog</a></li>
           
         </ul>
       </div>
@@ -207,8 +216,8 @@
       const dx = mouseX - cursorX;
       const dy = mouseY - cursorY;
 
-      cursorX += dx * 0.2;
-      cursorY += dy * 0.2;
+      cursorX += dx * 0.45;
+      cursorY += dy * 0.45;
 
       cursor.style.left = `${cursorX}px`;
       cursor.style.top = `${cursorY}px`;

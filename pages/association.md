@@ -2,6 +2,7 @@
 layout: default
 title: Présentation de l'asso
 permalink: /association
+body_class: association-page
 ---
 
 <div id="hero-image-wrap" style="position:relative; width:100%; line-height:0;">
@@ -20,8 +21,6 @@ permalink: /association
   /* Cache le logo du header sur cette page */
   .site-logo { opacity: 0; transition: opacity 0.3s ease; }
   .site-logo.visible { opacity: 1; }
-  /* Colle l'image directement sous le bandeau */
-  .content-wrapper { padding-top: 0 !important; margin-top: 0 !important; }
   /* Image hero responsive */
   #hero-image { width: 100%; display: block; height: auto; object-fit: cover; }
   @media (max-width: 768px) {

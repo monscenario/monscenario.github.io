@@ -8,7 +8,8 @@ google-ID: ''
 
 menu:
 - {name: "Présentation de l'asso", url: 'association'}
-- {name: 'Actualités et ressources', url: 'blog'}
+- {name: 'Ressources et actualités', url: 'ressources'}
+- {name: 'Blog', url: 'blog'}
 
 # Liens sociaux
 social:
