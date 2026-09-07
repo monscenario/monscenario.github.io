@@ -17,18 +17,9 @@
     padding: 180px 32px 60px;
     text-align: center;
     overflow: hidden;
-  }
-  .post-hero-bg {
-    position: absolute;
-    inset: 0;
     background-image: url(&apos;/assets/img/fond-article.png&apos;);
     background-size: cover;
     background-position: center;
-    z-index: 0;
-  }
-  .post-hero &gt; *:not(.post-hero-bg) {
-    position: relative;
-    z-index: 1;
   }
   .post-hero .post-tag {
     font-size: 0.7rem;

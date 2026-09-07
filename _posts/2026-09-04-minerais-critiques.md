@@ -14,18 +14,9 @@ bande_right: mine2.png
     padding: 180px 32px 60px;
     text-align: center;
     overflow: hidden;
-  }
-  .post-hero-bg {
-    position: absolute;
-    inset: 0;
     background-image: url('{{ site.baseurl }}/assets/img/fond-article.png');
     background-size: cover;
     background-position: center;
-    z-index: 0;
-  }
-  .post-hero > *:not(.post-hero-bg) {
-    position: relative;
-    z-index: 1;
   }
   .post-hero .post-tag {
     font-size: 0.7rem;
@@ -62,7 +53,7 @@ bande_right: mine2.png
   .post-body {
     max-width: 720px;
     margin: 0 auto;
-    padding: 64px 32px 100px;
+    padding: 64px 32px 40px;
     font-family: 'Inter', sans-serif;
     color: #222;
     line-height: 1.85;
@@ -238,7 +229,6 @@ bande_right: mine2.png
 
 <!-- En-tête de l'article -->
 <div class="post-hero">
-  <div class="post-hero-bg"></div>
   <h1>Minerais critiques : quelles sont les bonnes questions à se poser ?</h1>
   <p class="post-subtitle">Le cuivre de votre chargeur, le cobalt de votre batterie, le néodyme de l'éolienne au large des côtes. Ces métaux, personne ne les regardait. Depuis peu, on les compte comme des munitions.</p>
   <div class="post-meta">Par Scénario &nbsp;·&nbsp; 4 septembre 2026</div>
@@ -265,7 +255,7 @@ bande_right: mine2.png
   </nav>
 
   <figure style="margin: 2.5rem 0;">
-    <img src="{{ site.baseurl }}/assets/img/brgm-carte-productions.png" alt="Carte de répartition des productions minières mondiales — BRGM 2024" style="width:100%; border-radius:8px; display:block;">
+    <img src="{{ site.baseurl }}/assets/img/brgm-carte-productions.png" alt="Carte de répartition des productions minières mondiales - BRGM 2024" style="width:100%; border-radius:8px; display:block;">
     <figcaption style="font-size:0.75rem; color:#aaa; text-align:center; margin-top:0.6rem; letter-spacing:0.04em;">BRGM - Carte de répartition des productions minières mondiales, 2024</figcaption>
   </figure>
 
@@ -295,7 +285,7 @@ bande_right: mine2.png
 
   <h2 id="demande">La demande grimpe : la production suit-elle ?</h2>
 
-  <p>Le problème, c'est que les projets miniers et de raffinage n'avancent pas assez vite — notamment parce que les meilleurs gisements ont souvent été exploités en premier, rendant l'approvisionnement de plus en plus complexe. Un <strong>déficit d'offre important</strong> est attendu pour le cuivre et le lithium dans les prochaines décennies.</p>
+  <p>Le problème, c'est que les projets miniers et de raffinage n'avancent pas assez vite - notamment parce que les meilleurs gisements ont souvent été exploités en premier, rendant l'approvisionnement de plus en plus complexe. Un <strong>déficit d'offre important</strong> est attendu pour le cuivre et le lithium dans les prochaines décennies.</p>
 
   <div style="margin: 2.5rem 0;">
     <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#999; margin-bottom:0.6rem;">Demande projetée vs mines annoncées: lithium &amp; cuivre</p>
@@ -303,8 +293,8 @@ bande_right: mine2.png
       Les barres indiquent la production issue des mines déjà en exploitation ou annoncées, comparée à la demande selon deux scénarios : <strong>STEPS</strong> (Stated Policies Scenario = politiques actuelles) et <strong>APS</strong> (Announced Pledges Scenario = engagements climatiques tenus).
     </p>
     <a href="https://www.iea.org/reports/copper-2" target="_blank" rel="noopener" style="display:grid; grid-template-columns:1fr 1fr; gap:12px; text-decoration:none;">
-      <img src="{{ site.baseurl }}/assets/img/Li-miningrequirements.png" alt="Lithium — besoins miniers vs. mines annoncées (AIE)" style="width:100%; border-radius:6px; display:block; border:1px solid #eee;">
-      <img src="{{ site.baseurl }}/assets/img/Cu-miningrequirements.png" alt="Cuivre — besoins miniers vs. mines annoncées (AIE)" style="width:100%; border-radius:6px; display:block; border:1px solid #eee;">
+      <img src="{{ site.baseurl }}/assets/img/Li-miningrequirements.png" alt="Lithium - besoins miniers vs. mines annoncées (AIE)" style="width:100%; border-radius:6px; display:block; border:1px solid #eee;">
+      <img src="{{ site.baseurl }}/assets/img/Cu-miningrequirements.png" alt="Cuivre - besoins miniers vs. mines annoncées (AIE)" style="width:100%; border-radius:6px; display:block; border:1px solid #eee;">
     </a>
     <p style="font-size:0.75rem; color:#bbb; text-align:center; margin-top:0.5rem; letter-spacing:0.03em;">AIE, Copper 2025 &amp; Lithium 2023 · Clique sur la photo pour accéder au rapport et voir les autres projections →</p>
     <div class="callout" style="margin-top:1.4rem;">
@@ -324,7 +314,7 @@ bande_right: mine2.png
   </div>
 
 <figure style="margin: 2.5rem 0;">
-    <img src="{{ site.baseurl }}/assets/img/BRGM-raffinage.png" alt="Carte de répartition du raffinage — BRGM 2024" style="width:100%; border-radius:8px; display:block;">
+    <img src="{{ site.baseurl }}/assets/img/BRGM-raffinage.png" alt="Carte de répartition du raffinage - BRGM 2024" style="width:100%; border-radius:8px; display:block;">
     <figcaption style="font-size:0.75rem; color:#aaa; text-align:center; margin-top:0.6rem; letter-spacing:0.04em;">BRGM - Carte de répartition des productions minières mondiales, 2024</figcaption>
   </figure>
 
@@ -332,7 +322,7 @@ bande_right: mine2.png
 
  <!-- Carrousel production par minerai -->
   <div style="margin: 2rem 0;">
-    <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#999; margin-bottom:0.8rem;">Production mondiale par minerai — cliquer pour le rapport AIE</p>
+    <p style="font-size:0.78rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#999; margin-bottom:0.8rem;">Production mondiale par minerai - cliquer pour le rapport AIE</p>
     <div style="display:flex; gap:16px; overflow-x:auto; padding-bottom:10px; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;">
       {% assign prod_imgs = "Li-prod,Cu-prod,Co-prod,Ni-prod,Rare-prod,C-prod" | split: "," %}
       {% assign prod_labels = "Lithium,Cuivre,Cobalt,Nickel,Terres rares,Graphite" | split: "," %}
@@ -341,7 +331,7 @@ bande_right: mine2.png
       <a href="{{ prod_urls[forloop.index0] }}" target="_blank" rel="noopener"
          style="flex:0 0 auto; width:460px; scroll-snap-align:start; text-decoration:none; display:block;">
         <img src="{{ site.baseurl }}/assets/img/{{ img }}.png"
-             alt="{{ prod_labels[forloop.index0] }} — production mondiale (AIE)"
+             alt="{{ prod_labels[forloop.index0] }} - production mondiale (AIE)"
              style="width:460px; display:block; border-radius:8px; border:1px solid #eee;">
         <span style="display:block; font-size:0.75rem; color:#aaa; text-align:center; margin-top:0.4rem; letter-spacing:0.04em;">{{ prod_labels[forloop.index0] }} →</span>
       </a>
@@ -361,7 +351,7 @@ bande_right: mine2.png
 
   <figure style="margin: 2.5rem 0;">
     <img src="{{ site.baseurl }}/assets/img/Cu_prix.jpg" alt="Évolution du prix du cuivre (AIE)" style="width:70%; max-width:480px; display:block; border-radius:8px; border:1px solid #eee; margin:0 auto;">
-    <figcaption style="font-size:0.75rem; color:#aaa; text-align:center; margin-top:0.6rem; letter-spacing:0.04em;">Prix du cuivre — AIE, Global Critical Minerals Outlook 2026</figcaption>
+    <figcaption style="font-size:0.75rem; color:#aaa; text-align:center; margin-top:0.6rem; letter-spacing:0.04em;">Prix du cuivre - AIE, Global Critical Minerals Outlook 2026</figcaption>
   </figure>
 
   
@@ -398,9 +388,9 @@ bande_right: mine2.png
 
    <figure style="margin: 2rem 0;">
     <a href="https://www.mineralinfo.fr/fr/potentiel-du-sous-sol-francais-exploration" target="_blank" rel="noopener">
-      <img src="{{ site.baseurl }}/assets/img/potentiel-minier.jpg" alt="Potentiel minier du sous-sol français — BRGM 2023" style="width:100%; border-radius:8px; display:block; border:1px solid #eee;">
+      <img src="{{ site.baseurl }}/assets/img/potentiel-minier.jpg" alt="Potentiel minier du sous-sol français - BRGM 2023" style="width:100%; border-radius:8px; display:block; border:1px solid #eee;">
     </a>
-    <figcaption style="font-size:0.75rem; color:#aaa; text-align:center; margin-top:0.6rem; letter-spacing:0.04em;">Potentiel minier du sous-sol français — BRGM 2023 · Cliquer pour explorer →</figcaption>
+    <figcaption style="font-size:0.75rem; color:#aaa; text-align:center; margin-top:0.6rem; letter-spacing:0.04em;">Potentiel minier du sous-sol français - BRGM 2023 · Cliquer pour explorer →</figcaption>
   </figure>
 
   <p>« On aurait dû investir comme la Chine ! » Mais ce qu'on oublie de dire, c'est le prix social et environnemental des mines. Et c'est peut-être le point le plus important à retenir de cet article ! </p>
@@ -411,7 +401,7 @@ bande_right: mine2.png
 
   <figure style="margin: 2rem 0;">
     <a href="https://reporterre.net/Les-ravages-ignores-de-l-activite-miniere" target="_blank" rel="noopener">
-      <img src="{{ site.baseurl }}/assets/img/mine-reporterre.png" alt="Les ravages ignorés de l'activité minière — Reporterre" style="width:100%; border-radius:8px; display:block; border:1px solid #eee;">
+      <img src="{{ site.baseurl }}/assets/img/mine-reporterre.png" alt="Les ravages ignorés de l'activité minière - Reporterre" style="width:100%; border-radius:8px; display:block; border:1px solid #eee;">
     </a>
     <figcaption style="font-size:0.75rem; color:#aaa; text-align:center; margin-top:0.6rem; letter-spacing:0.04em;"> La mine de cuivre de Palabora (Afrique du Sud) : à gauche, la représentation imagée de la quantité de cuivre métal produite par la mine jusqu’à environ 2007  ; à droite, l’emprise en surface des déchets miniers en vue satellitaire. © Dillon Marsh/Google 2021/Création SystExt/septembre 2021, Src: Reporterre · Cliquer pour lire →</figcaption>
   </figure>
@@ -434,19 +424,19 @@ bande_right: mine2.png
   <div class="post-sources">
     <h2>Sources</h2>
     <ul>
-      <li><a href="https://www.iea.org/reports/global-critical-minerals-outlook-2026" target="_blank" rel="noopener">AIE — <em>Global Critical Minerals Outlook 2026</em></a> — rapport principal (projections de demande p. 110-115, raffinage chinois p. 121, recyclage p. 120-123, investissements p. 112-115, G7 p. 94, stratégies nationales p. 92-95) et résumé exécutif (déficits d'offre p. 6-7, prix p. 6, acide sulfurique p. 8, surcoût de diversification p. 10, impact consommateur p. 11, Amérique latine p. 12-13)</li>
-      <li><a href="https://www.consilium.europa.eu/fr/infographics/critical-raw-materials-act/" target="_blank" rel="noopener">Conseil de l'Union européenne — Critical Raw Materials Act</a></li>
-      <li><a href="https://www.entreprises.gouv.fr/fr/actualites/terres-rares-aimants-permanents" target="_blank" rel="noopener">Direction générale des Entreprises — Plan national terres rares et aimants permanents</a></li>
-      <li><a href="https://www.mpmaterials.com" target="_blank" rel="noopener">MP Materials — Partenariat avec le département de la Défense américain</a></li>
-      <li><a href="https://www.brgm.fr/fr/reference/inventaire-national-ressources-minerales-metalliques" target="_blank" rel="noopener">BRGM — Inventaire national des ressources minérales</a></li>
-      <li><a href="https://www.mineralinfo.fr/fr/potentiel-du-sous-sol-francais-exploration" target="_blank" rel="noopener">MineralInfo — Potentiel du sous-sol français : exploration</a></li>
-      <li><a href="https://emili.imerys.com" target="_blank" rel="noopener">Imerys — Projet EMILI (lithium, Allier)</a></li>
-      <li><a href="https://www.fne.asso.fr/communiques/mine-de-lithium-dans-lallier-creusons-le-sujet" target="_blank" rel="noopener">France Nature Environnement — Mine de lithium dans l'Allier : creusons le sujet</a></li>
-      <li><a href="https://reporterre.net/Les-ravages-ignores-de-l-activite-miniere" target="_blank" rel="noopener">Reporterre — Les ravages ignorés de l'activité minière</a></li>
-      <li><a href="https://www.vie-publique.fr/en-bref/299667-minerais-et-metaux-critiques-mieux-securiser-les-approvisionnements" target="_blank" rel="noopener">Vie publique — Minerais et métaux critiques : mieux sécuriser les approvisionnements</a></li>
-      <li><a href="https://news.un.org/fr/story/2026/03/1158514" target="_blank" rel="noopener">ONU Info — Minerais critiques et transition énergétique</a></li>
-      <li><a href="https://www.consilium.europa.eu/fr/infographics/critical-raw-materials-explained/" target="_blank" rel="noopener">Conseil de l'UE — Les matières premières critiques expliquées</a></li>
-      <li><a href="https://greenit.eco/nos-etudes-et-essais/etat-des-reserves-mondiales-de-metaux-2025/" target="_blank" rel="noopener">GreenIT — État des réserves mondiales de métaux 2025</a></li>
+      <li><a href="https://www.iea.org/reports/global-critical-minerals-outlook-2026" target="_blank" rel="noopener">AIE - <em>Global Critical Minerals Outlook 2026</em></a> - rapport principal (projections de demande p. 110-115, raffinage chinois p. 121, recyclage p. 120-123, investissements p. 112-115, G7 p. 94, stratégies nationales p. 92-95) et résumé exécutif (déficits d'offre p. 6-7, prix p. 6, acide sulfurique p. 8, surcoût de diversification p. 10, impact consommateur p. 11, Amérique latine p. 12-13)</li>
+      <li><a href="https://www.consilium.europa.eu/fr/infographics/critical-raw-materials-act/" target="_blank" rel="noopener">Conseil de l'Union européenne - Critical Raw Materials Act</a></li>
+      <li><a href="https://www.entreprises.gouv.fr/fr/actualites/terres-rares-aimants-permanents" target="_blank" rel="noopener">Direction générale des Entreprises - Plan national terres rares et aimants permanents</a></li>
+      <li><a href="https://www.mpmaterials.com" target="_blank" rel="noopener">MP Materials - Partenariat avec le département de la Défense américain</a></li>
+      <li><a href="https://www.brgm.fr/fr/reference/inventaire-national-ressources-minerales-metalliques" target="_blank" rel="noopener">BRGM - Inventaire national des ressources minérales</a></li>
+      <li><a href="https://www.mineralinfo.fr/fr/potentiel-du-sous-sol-francais-exploration" target="_blank" rel="noopener">MineralInfo - Potentiel du sous-sol français : exploration</a></li>
+      <li><a href="https://emili.imerys.com" target="_blank" rel="noopener">Imerys - Projet EMILI (lithium, Allier)</a></li>
+      <li><a href="https://www.fne.asso.fr/communiques/mine-de-lithium-dans-lallier-creusons-le-sujet" target="_blank" rel="noopener">France Nature Environnement - Mine de lithium dans l'Allier : creusons le sujet</a></li>
+      <li><a href="https://reporterre.net/Les-ravages-ignores-de-l-activite-miniere" target="_blank" rel="noopener">Reporterre - Les ravages ignorés de l'activité minière</a></li>
+      <li><a href="https://www.vie-publique.fr/en-bref/299667-minerais-et-metaux-critiques-mieux-securiser-les-approvisionnements" target="_blank" rel="noopener">Vie publique - Minerais et métaux critiques : mieux sécuriser les approvisionnements</a></li>
+      <li><a href="https://news.un.org/fr/story/2026/03/1158514" target="_blank" rel="noopener">ONU Info - Minerais critiques et transition énergétique</a></li>
+      <li><a href="https://www.consilium.europa.eu/fr/infographics/critical-raw-materials-explained/" target="_blank" rel="noopener">Conseil de l'UE - Les matières premières critiques expliquées</a></li>
+      <li><a href="https://greenit.eco/nos-etudes-et-essais/etat-des-reserves-mondiales-de-metaux-2025/" target="_blank" rel="noopener">GreenIT - État des réserves mondiales de métaux 2025</a></li>
     </ul>
   </div>
 
@@ -454,4 +444,4 @@ bande_right: mine2.png
     <a href="{{ site.baseurl }}/blog">← Retour au Blog</a>
   </div>
 
-</div>
+
